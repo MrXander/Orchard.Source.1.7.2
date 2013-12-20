@@ -1,0 +1,5 @@
+D:\tmp\My\Orchard.Source.1.7.2\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.dll
+D:\tmp\My\Orchard.Source.1.7.2\src\Orchard.WarmupStarter\bin\Debug\Orchard.WarmupStarter.pdb
+D:\tmp\My\Orchard.Source.1.7.2\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.csprojResolveAssemblyReference.cache
+D:\tmp\My\Orchard.Source.1.7.2\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.dll
+D:\tmp\My\Orchard.Source.1.7.2\src\Orchard.WarmupStarter\obj\Debug\Orchard.WarmupStarter.pdb

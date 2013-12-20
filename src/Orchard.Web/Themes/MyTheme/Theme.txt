@@ -1,0 +1,4 @@
+Name: MyTheme
+Author: Me
+Description: Description for the theme
+Version: 1.0
