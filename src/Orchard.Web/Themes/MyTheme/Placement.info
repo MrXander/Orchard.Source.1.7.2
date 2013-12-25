@@ -1,6 +1,8 @@
 <Placement>
   <!-- Customize where the shapes are rendered -->
-
+  <Place Parts_Title="-"/>
+  <Place Parts_Common_Metadata="-"/>
+  
   <!-- 
   <Place Parts_Blogs_BlogArchives="Content:before"/>
   <Place Parts_Blogs_RecentBlogPosts="Content:after"/>

@@ -1,0 +1,6 @@
+2013-12-24 15:07:37,985 [8] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2013-12-24 15:13:03,921 [26] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2013-12-24 15:13:05,900 [17] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "InsertModuleInContent"
+2013-12-24 15:13:22,431 [7] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2013-12-24 15:21:38,022 [7] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2013-12-24 16:23:28,492 [8] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
