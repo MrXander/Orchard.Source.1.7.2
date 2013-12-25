@@ -31,6 +31,47 @@
     <References />
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.Scripting</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Orchard.Themes</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Orchard.Widgets</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Scripting</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>Orchard.Themes</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
+    <ModuleName>InsertModuleInContent</ModuleName>
+    <VirtualPath>~/Modules/InsertModuleInContent/InsertModuleInContent.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Widgets</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>Lucene</ModuleName>
     <VirtualPath>~/Modules/Lucene/bin/Lucene.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -351,12 +392,6 @@
     </References>
   </Dependency>
   <Dependency>
-    <ModuleName>Orchard.Themes</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
     <ModuleName>Orchard.ContentTypes</ModuleName>
     <VirtualPath>~/Modules/Orchard.ContentTypes/bin/Orchard.ContentTypes.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -387,29 +422,6 @@
         <Name>Orchard.Workflows</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/Orchard.Workflows/bin/Orchard.Workflows.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Scripting</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.Widgets</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Widgets/bin/Orchard.Widgets.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Scripting</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Scripting/bin/Orchard.Scripting.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Orchard.Themes</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Themes/bin/Orchard.Themes.dll</VirtualPath>
       </Reference>
     </References>
   </Dependency>
