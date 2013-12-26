@@ -19,7 +19,7 @@ namespace InsertModuleInContent.Filters
 
         public string ProcessContent(string text, string flavor) {
             if (!string.IsNullOrEmpty(text)) {
-                var widgetNames = WidgetParser.GetWidgetNames(text);
+                var widgetNames = WidgetParser.GetWidgetNames(text, _contentManager);
                 //var stopwatch = new Stopwatch();
                 //stopwatch.Start();
                 var widgets = _contentManager.Query<WidgetPart, WidgetPartRecord>().Where(x => x.Name == "TestWidget").List();
