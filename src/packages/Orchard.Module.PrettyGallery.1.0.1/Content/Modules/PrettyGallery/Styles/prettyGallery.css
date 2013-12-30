@@ -1,0 +1,87 @@
+.galleryDescription {
+    margin-bottom: 10px;
+}
+
+ul.icons {
+    list-style: none; margin: 0 0 5px 0 !important;
+}
+ul.icons li {
+    float: left;
+    display: block;
+    padding: 4px;
+}
+ul.icons li .thumbnail{
+    text-align:center;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding:0px;
+}
+ul.icons li .mediaTitle {
+    text-align:center;
+    margin: 2px;
+}
+
+ul.tiles {
+    list-style: none; margin: 0 0 5px 0 !important;
+}
+ul.tiles li {
+    display: block;
+    border-bottom: 1px dotted #C0C0C0;
+    padding: 2px;
+    margin-bottom: 6px;
+    clear: both;
+}
+ul.tiles li .thumbnail {
+    float: left;
+    text-align:center;
+    margin-top:6px;
+    margin-bottom:0px;
+    padding:6px;
+}
+ul.tiles li .mediaInfo {
+    margin: 4px;
+    float: left;
+}
+ul.tiles li .mediaInfo .mediaDescription{
+}
+
+.itemHeading {
+    float: left;
+}
+
+.itemActions {
+    float: right;
+}
+
+.summary .tile {
+    clear: both;
+}
+
+.summary .tile .thumbnail {
+    float: left;
+    text-align:center;
+}
+
+.summary .tile .mediaInfo {
+    float: left;
+    margin-left: 10px;
+}
+
+.summary .tile .mediaInfo .setting{
+    margin-bottom: 6px;
+}
+
+fieldset .setting {
+    margin-bottom:6px;
+}
+/*.summary .tile .mediaInfo .edit 
+{
+    display: block;
+    border: 1px dashed #E0E0E0;
+    width: 100%;
+}
+*/
+
+.setting h5 {
+    display: inline;
+}

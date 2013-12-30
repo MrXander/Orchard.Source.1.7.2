@@ -1,0 +1,12 @@
+﻿@model Alexan.PhotoAlbums.Models.PhotoPart
+
+<fieldset>    
+    <div class="editor-label">
+        @Html.LabelFor(model => model.FileName, T("File Name"))
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(model => model.FileName)
+        @Html.ValidationMessageFor(model => model.FileName)
+    </div> 
+
+</fieldset>

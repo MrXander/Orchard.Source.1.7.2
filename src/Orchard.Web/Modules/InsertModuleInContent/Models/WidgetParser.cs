@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
+﻿using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
+using System.Text;
 using System.Text.RegularExpressions;
-using System.Web;
 using Orchard.ContentManagement;
 using Orchard.Core.Common.Models;
-using Orchard.DisplayManagement.Implementation;
+using Orchard.Logging;
 using Orchard.Widgets.Models;
 
 namespace InsertModuleInContent.Models
@@ -14,10 +13,16 @@ namespace InsertModuleInContent.Models
     public class WidgetParser {
         private const string GROUP_NAME = "name";
         //private static readonly string _regexPattern = ConfigurationManager.AppSettings["Regex"];
-        private static readonly Regex _regex = new Regex(@"###(?<name>\w+)###", RegexOptions.IgnoreCase);
+        private static readonly Regex _regex = new Regex(@"###(?<name>\w+)###", RegexOptions.IgnoreCase);        
 
-        public static string[] GetWidgetNames(string text, IContentManager contentManager) {
-            var result = new List<string>();
+        public static string Replace(string text, IContentManager contentManager) {                        
+            if (string.IsNullOrEmpty(text))
+                return text;
+
+            //var stopwatch = new Stopwatch();
+            //stopwatch.Start();
+
+            var strBuilder = new StringBuilder(text);
             
             foreach (Match match in _regex.Matches(text)) {
                 var name = match.Groups[GROUP_NAME];
@@ -29,15 +34,17 @@ namespace InsertModuleInContent.Models
                         .FirstOrDefault();
                     
                     if (widget != null) {
-                        var markup = contentManager.BuildDisplay(widget);
-                        var bodyPart = markup.As<BodyPart>();
-                        //var m = markup.Content.Items.Where(x => x.Metadata.Prefix)Text;
-                        var a = 0;
+                        var w = contentManager.BuildDisplay(widget);
+                        var markup = ((ContentItem)w.ContentItem).As<BodyPart>().Text;                        
+                        strBuilder.Replace(match.Value, markup);
                     }
                 }
             }
 
-            return null;
+            //stopwatch.Stop();
+            //NullLogger.Instance.Debug(stopwatch.Elapsed.TotalSeconds.ToString(CultureInfo.InvariantCulture));
+
+            return strBuilder.ToString();
         }
     }
 }

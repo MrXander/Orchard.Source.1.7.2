@@ -1,0 +1,48 @@
+﻿@using Alexan.PhotoAlbums.Models;
+@using Orchard.ContentManagement;
+@using Orchard.Utility.Extensions;
+@using Alexan.PhotoAlbums.Extensions;
+@using Orchard.Core.Routable.Models;
+@using Alexan.PhotoAlbums.Extensions;
+
+@{
+    Style.Require("PhotoAlbumsAdmin");
+    ContentItem contentItem = Model.ContentItem;
+    PhotoAlbumPart albumPart = contentItem.As<PhotoAlbumPart>();
+    int photoCount = Model.PhotoCount;
+
+    string albumIconUrl = Href("../Content/images/lightbox-blank.gif"); ;
+}  
+    @switch(albumPart.DisplayType){
+        case DisplayTypes.Lightbox:
+            albumIconUrl = Href("../Content/images/album-lightbox.png");
+            break;
+        case DisplayTypes.Slideshow:
+            albumIconUrl = Href("../Content/images/album-slideshow.png");
+            break;
+        case DisplayTypes.Unknown:
+            albumIconUrl = Href("../Content/images/lightbox-blank.gif");
+            break;
+    }    
+
+<div class="summary" itemscope="itemscope" itemid="@contentItem.Id" itemtype="http://orchardproject.net/data/ContentItem">
+    <div class="thumb-column">
+        <img src="@albumIconUrl" alt="@contentItem.ContentType" />
+    </div>
+    <div class="properties">
+        <h3>@Html.Link(string.Format("{0} ({1})", contentItem.As<RoutePart>().Title, photoCount), Url.AlbumItem(albumPart))</h3>
+    </div>
+    <div class="related">
+        <a href="@Url.AlbumItem(albumPart)" title="@T("Manage Photos")">@T("Manage Photos")</a> |
+        <a href="@Url.PhotoAdd(albumPart)" title="@T("Add Photos") ">@T("Add Photos")</a>
+        <br/>
+        @Html.ItemDisplayLink(T("View").Text, contentItem) |
+        <a href="@Url.AlbumEdit(albumPart)" title="@T("Manage Album Properties")">@T("Manage Album Properties")</a> |
+        <a href="@Url.AlbumRemove(albumPart, false)" title="@T("Remove")" class="remove-album">@T("Remove")</a>
+        <div class="remove-album-panel" style="display:none;">
+            <a href="@Url.AlbumRemove(albumPart, false)" itemprop="RemoveUrl UnsafeUrl" title="@T("Remove album")">@T("Remove album")</a> 
+            <a href="@Url.AlbumRemove(albumPart, true)" itemprop="RemoveUrl UnsafeUrl" title="@T("Remove album and media folder")">@T("Remove album and media folder")</a>    
+        </div>
+    </div>
+</div>
+

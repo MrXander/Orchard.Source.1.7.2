@@ -1,0 +1,54 @@
+﻿@using Alexan.PhotoAlbums.Models;
+@using Orchard.ContentManagement;
+@using Orchard.Mvc.Html;
+@using Orchard.Utility.Extensions;
+@using Alexan.PhotoAlbums.Extensions;
+
+@{
+    Style.Require("PhotoAlbumsAdmin");
+    ContentItem contentItem = Model.ContentItem;
+    PhotoPart photo = contentItem.Get(typeof(PhotoPart)) as PhotoPart;
+    int photoWidth = photo.AlbumPart.ThumbWidth;
+    int photoHeight = photo.AlbumPart.ThumbHeight;
+}
+<div class="summary" itemscope="itemscope" itemid="@contentItem.Id" itemtype="http://orchardproject.net/data/ContentItem">
+    <div class="thumb-column">
+        @Html.Image(Url.Thumb(photo.Id, photoWidth, photoHeight), photo.Name, null  )
+    </div>
+    <div class="properties">
+        <h3>@Model.Title</h3>
+        @if (Model.Header != null) {
+        <div class="header">@Display(Model.Header)</div>
+        }
+        @if (Model.Meta != null) {
+            <div class="metadata">@Display(Model.Meta)</div>
+        }
+    </div>
+    <div class="related">
+        <a href="@Url.PhotoEdit(photo)" title="@T("Edit")">@T("Edit")</a> |
+        @if (!photo.HasPublished())
+        {
+            <text>                 
+                @Html.Link(T("Publish").Text, Url.Action("Publish", "Admin", new { area = "Contents", id = photo.ContentItem.Id, returnUrl = Request.ToUrlString() }), new { itemprop = "PublishUrl UnsafeUrl" })
+                 |               
+            </text>            
+        }
+        else
+        {
+            <text> 
+                @Html.Link(T("Unpublish").Text, Url.Action("Unpublish", "Admin", new { area = "Contents", id = photo.ContentItem.Id, returnUrl = Request.ToUrlString() }), new { itemprop = "UnpublishUrl UnsafeUrl" })
+                 | 
+                @Html.ItemDisplayLink(T("View").Text, contentItem) |
+            </text>
+        }
+        
+        <a class="remove-photo" href="@Url.PhotoRemove(contentItem.Id, false)" title="@T("Remove")">@T("Remove")</a>
+        <div class="remove-photo-panel" style="display:none;">
+            <a href="@Url.PhotoRemove(contentItem.Id, false)" itemprop="RemoveUrl UnsafeUrl" title="@T("Remove photo")">@T("Remove photo")</a> 
+            <a href="@Url.PhotoRemove(contentItem.Id, true)" itemprop="RemoveUrl UnsafeUrl" title="@T("Remove photo and file")">@T("Remove photo and file")</a>    
+        </div>
+    </div>
+</div>
+
+
+

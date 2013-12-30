@@ -1,0 +1,44 @@
+﻿<Placement>    
+    <Place Parts_PhotoAlbums_PhotoAlbum="Content:3"/>
+    <Place Parts_PhotoAlbums_PhotoAlbum_Edit="Content:3"/>
+    
+    <Place Parts_PhotoAlbums_Photo="Content:3"/>
+    <Place Parts_PhotoAlbums_Photo_Summary="Content:3"/>
+    <Place Parts_PhotoAlbums_Photo_Edit="Content:3"/>
+
+    <Place Parts_PhotoAlbums_PhotoAlbum_Thumbs="Content:5"/>
+
+    <Place Parts_PhotoAlbums_PhotoAlbumLightbox="Content:10"/>
+    <Place Parts_PhotoAlbums_PhotoAlbumLightbox_Layout="Content:2"/>
+    <Place Parts_PhotoAlbums_PhotoAlbumSlideshow="Content:10"/>
+    <Place Parts_PhotoAlbums_PhotoAlbumSlideshow_Layout="Content:4"/>
+    <Place Parts_PhotoAlbums_PhotoAlbumLightbox_Edit="Content:4"/>
+    <Place Parts_PhotoAlbums_PhotoAlbumSlideshow_Edit="Content:4"/>
+
+    <Match ContentType="Photo Album - Lightbox">
+        <Match DisplayType="Detail">
+            <Place Parts_Common_Metadata="Nowhere"></Place>
+        </Match>
+    </Match>
+
+    <Match ContentType="Photo Album - Slideshow">
+        <Match DisplayType="Detail">
+            <Place Parts_Common_Metadata="Nowhere"></Place>
+        </Match>
+    </Match>
+
+    <Match ContentType="Photo">        
+        <Match DisplayType="Summary">
+            <Place Parts_PhotoAlbums_Photo_Lightbox="Content:1"></Place>
+            <Place Parts_RoutableTitle_Summary="Content:2"></Place>
+            <Place Parts_Common_Metadata_Summary="Content:3"></Place>
+        </Match>
+    </Match>
+
+    <Match DisplayType="DetailAdmin"> 
+        <Place Parts_PhotoAlbums_PhotoAlbumLightbox="Nowhere"/>
+        <Place Parts_PhotoAlbums_PhotoAlbumLightbox_Layout="Nowhere"/>
+        <Place Parts_PhotoAlbums_PhotoAlbumSlideshow="Nowhere"/>
+        <Place Parts_PhotoAlbums_PhotoAlbumSlideshow_Layout="Nowhere"/>
+    </Match>
+</Placement>

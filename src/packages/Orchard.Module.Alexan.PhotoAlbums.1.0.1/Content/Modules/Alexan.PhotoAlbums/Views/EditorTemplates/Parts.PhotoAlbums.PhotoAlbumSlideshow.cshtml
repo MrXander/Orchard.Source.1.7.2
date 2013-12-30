@@ -1,0 +1,17 @@
+﻿@model Alexan.PhotoAlbums.Models.PhotoAlbumSlideshowPart
+
+<fieldset>
+    <!--AutoPlay -->
+     <div>
+        @Html.CheckBoxFor(m => m.AutoPlay, new { @class = "check-box" }) 
+        <label for="Resize" class="forcheckbox">@T("Auto Play")</label>               
+    </div>
+    <!--MaxHeight -->
+    <div class="editor-label">
+        @Html.LabelFor(model => model.Interval, T("Interval"))
+    </div>
+    <div class="editor-field">
+        @Html.TextBoxFor(m => m.Interval, new { type = "number" })&nbsp; @T("seconds")
+        @Html.ValidationMessageFor(model => model.Interval)
+    </div>
+</fieldset>

@@ -1,0 +1,13 @@
+Name: Pretty Gallery
+AntiForgery: enabled
+Author: CraneInTheSky
+Website: http://CraneInTheSky.com
+Version: 1.0.1
+OrchardVersion: 1.0.20
+Description: The Pretty Gallery module allows to create media galleries of images. Galleries are presented as lists of thumbnail images with ability to open a slideshow using the prettyPhoto jQuery plugin.
+Features:
+    PrettyGallery:
+        Name: Pretty Gallery
+        Description: Media galleries and slide shows.
+        Dependencies: Orchard.Media
+        Category: Media
