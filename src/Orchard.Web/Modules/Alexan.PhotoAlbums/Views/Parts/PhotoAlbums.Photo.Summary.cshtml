@@ -1,0 +1,13 @@
+﻿@using Alexan.PhotoAlbums.Models;
+@using Orchard.ContentManagement;
+@using Alexan.PhotoAlbums.Extensions;
+@{
+    Style.Require("PhotoAlbums");
+    PhotoPart photo = Model.Part;   
+}
+
+<a class="thumb" href="@Url.Thumb(photo.Id, photo.Size.Width, photo.Size.Height)" 
+   style="width:@(photo.ThumbSize.Width)px; height:@(photo.ThumbSize.Height)px">
+    @Html.Image(Url.Thumb(photo.Id, photo.ThumbSize.Width, photo.ThumbSize.Height), photo.Name, null)
+</a>
+

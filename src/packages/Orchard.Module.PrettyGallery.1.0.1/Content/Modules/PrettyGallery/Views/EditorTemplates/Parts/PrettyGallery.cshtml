@@ -1,0 +1,155 @@
+﻿@model PrettyGallery.ViewModels.EditPrettyGalleryViewModel
+@{
+    var editMode = ViewContext.RouteData.Values["action"].ToString().ToLower() == "edit";
+    var createMode = !editMode;
+    
+    Style.Require("prettyGallery");
+}
+@if (editMode) {
+    Style.Require("prettyPhoto");
+    Script.Require("jQuery").AtHead();
+    Script.Require("prettyPhoto").AtHead();
+    Script.Require("jeditable").AtHead();
+}
+<fieldset>
+    <legend>@T("Pretty Gallery settings")</legend>
+
+    <div class="setting">
+        @Html.LabelFor(model => model.Description, T("Description"))
+        @Html.TextAreaFor(m => m.Description, new { @class = "text" })
+    </div>
+
+    <div class="setting">
+        @Html.LabelFor(model => model.ThumbnailWidth, T("Thumbnail size (Width x Height)"))
+        @Html.TextBoxFor(m => m.ThumbnailWidth, new { @class = "text" }) @T("x") @Html.TextBoxFor(m => m.ThumbnailHeight, new { @class = "text" })
+    </div>
+
+    <div class="setting">
+        @Html.LabelFor(model => model.Layout, T("Gallery layout"))
+        @Html.DropDownListFor(model => model.Layout,
+                              Model.Layouts.Select(s => new SelectListItem {
+                                  Selected = (string.Compare(s, Model.Layout, true) == 0),
+                                  Text = s,
+                                  Value = s
+                              }) //,"(Choose layout...)"
+                              )
+    </div>
+
+    <div class="setting">
+        @Html.LabelFor(model => model.Mode, T("Lightbox mode"))
+        @Html.DropDownListFor(model => model.Mode,
+                              Model.Modes.Select(s => new SelectListItem {
+                                  Selected = (int)s == Model.Mode,
+                                  Text = s.ToString(),
+                                  Value = ((int)s).ToString()
+                              }) //,"(Choose mode...)"
+                              )
+    </div>
+
+    <div class="setting">
+        @Html.LabelFor(model => model.PrettyParams.theme, T("Lightbox theme"))
+        @Html.DropDownListFor(model => model.PrettyParams.theme,
+                              Model.PrettyThemes.Select(s => new SelectListItem {
+                                  Selected = (string.Compare(s, Model.PrettyParams.theme, true) == 0),
+                                  Text = s,
+                                  Value = s
+                              }) //,"(Choose theme...)"
+                              )
+    </div>
+
+    @Html.HiddenFor(m => m.PrettyParameters, new { })
+</fieldset>
+
+<fieldset>
+    <legend>@T("Pretty Gallery media")</legend>
+
+@if (createMode) {
+    <div class="setting">
+        @Html.LabelFor(model => model.MediaPath, T("Select a Media folder with your image files"))
+        @Html.DropDownListFor(model => model.MediaPath,
+                              Model.MediaFolders.Select(s => new SelectListItem {
+                                  Selected = (string.Compare(s.MediaPath, Model.MediaPath, true) == 0),
+                                  Text = s.Name,
+                                  Value = s.MediaPath
+                              }),
+                              T("(Choose media folder...)").ToString())
+&nbsp;&nbsp;
+        @Html.ActionLink(T("Manage Media").ToString(), "", new { area = "Orchard.Media" }, new { @target = "_blank" })
+        <span class="hint">Please upload some images using Orchard Media first (if you have not yet)</span>
+    </div>
+}
+
+@if (editMode)
+{
+    <div class="setting">
+        @Html.HiddenFor(model => model.MediaPath)
+        @Html.LabelFor(model => model.MediaPath, T("Media folder"))
+        <div><h5>@Model.MediaPath</h5>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Html.ActionLink(T("Upload new media files").ToString(), "Add", new { area = "Orchard.Media", mediaPath = Model.MediaPath }, new { @target = "_blank" })</div>
+    </div>
+
+    <span class="hint">Click on image title or description to edit them inline</span>
+    <div class="contentItems">
+        <ul>
+        @foreach (var item in Model.MediaFiles)
+        {
+            <li>
+                <div class="summary">
+                    <div class="itemHeading"><h3>@item.Name</h3></div>
+                    <div class="itemActions">Up | Down | Unpublish | Remove</div>
+                    <div class="tile">
+                        <div class="thumbnail" style="width:@(Model.ThumbnailWidth)px;"><a
+                                href="@item.Url" rel="prettyPhoto@(Model.GalleryId)"
+                                title="@item.Description"><img src="@item.ThumbnailUrl" alt="@item.Title"/></a></div>
+                        <div class="mediaInfo">
+                            <div class="setting"><label>@T("Title")</label> <span id="title_@(item.Id)" class="edit">@item.Title</span></div> 
+                            <div class="setting"><label>@T("Description")</label> <span id="description_@(item.Id)" class="edit">@item.Description</span></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        }
+        </ul>
+    </div>
+}
+</fieldset>
+@if (editMode)
+{
+    using (Script.Foot())
+    {
+<script type="text/javascript">
+    (function ($) {
+        $.getAntiForgeryToken = function (tokenWindow, appPath) {
+            var tokenName = "__RequestVerificationToken";
+            // var inputElements = window.$("input[type='hidden'][name=' + tokenName + "']");
+            var inputElements = window.document.getElementsByTagName("input");
+            for (var i = 0; i < inputElements.length; i++) {
+                var inputElement = inputElements[i];
+                if (inputElement.type === "hidden" && inputElement.name === tokenName) {
+                    return inputElement.value;
+                }
+            }
+        };
+    })(jQuery);
+
+    $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto(@(new HtmlString(Model.PrettyParameters)));
+
+        $('.edit').editable('@Url.Action("UpdateFileInfo", new { Area = "PrettyGallery", Controller = "PrettyGallery" })', {
+            indicator : 'Saving...',
+            tooltip   : 'Click to edit...',
+            submitdata: 
+                function(value, settings) { 
+                    return {
+                        mediaPath: '@Model.MediaPath.Replace("\\", "\\\\").Replace("\"", "\\\"")',
+                        __RequestVerificationToken: $.getAntiForgeryToken() // $('input[name=__RequestVerificationToken]').val()
+                    };
+                },
+            onerror: function (settings, original, xhr) {
+                original.reset();
+                //alert(xhr.responseText);
+            },
+        });
+    });
+</script>
+    }
+}

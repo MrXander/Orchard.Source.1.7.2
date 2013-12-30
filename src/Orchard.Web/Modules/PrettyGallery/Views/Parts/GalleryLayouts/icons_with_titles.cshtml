@@ -1,0 +1,15 @@
+﻿@model PrettyGallery.ViewModels.ViewPrettyGalleryViewModel
+@if (!string.IsNullOrEmpty((string)Model.Description)) {
+    <div class="galleryDescription">@Model.Description</div>
+}
+<ul class="icons">
+@foreach(var item in Model.MediaFiles)
+{
+    <li>
+        <div class="thumbnail" style="width:@(Model.ThumbnailWidth)px;height:@(Model.ThumbnailHeight+20)px;"><a href="@item.Url" rel="prettyPhoto@(Model.GalleryId)"
+                title="@item.Description"><img src="@item.ThumbnailUrl" alt="@item.Title"
+        /></a><div class="mediaTitle">@item.Title</div></div>
+    </li>
+}
+</ul>
+

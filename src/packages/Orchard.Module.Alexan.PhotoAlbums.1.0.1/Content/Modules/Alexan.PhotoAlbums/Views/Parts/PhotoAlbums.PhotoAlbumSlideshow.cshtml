@@ -1,0 +1,34 @@
+﻿@{    
+    Style.Require("jQuerySlideshow");
+    Script.Require("jQuery");
+    Script.Require("jQuerySlideshow");   
+}
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+        $(function () {
+            //set ul width
+            var $wrapThump = $('<div/>').attr('id', 'thumb-container');
+            var $ul = $(".content-item.photo-album-slideshow ul");
+            $ul.wrap($wrapThump);
+            var width = 0;
+            $ul.children('li').each(function(){
+                width += $(this).outerWidth();
+            });
+            $(".content-item.photo-album-slideshow ul").width(width);
+            
+            // Initialize Slideshow
+            var gallery = $('.content-item.photo-album-slideshow ul').slideshow({                
+                thumbSize: { width: @Model.ThumbSize.Width, height: @Model.ThumbSize.Height },
+                fullSize: { width: @Model.MaxSize.Width, height: @Model.MaxSize.Height },
+                txtImage: '@T("Image")',
+                txtOf: '@T("of")',
+                delayAnimation: @Model.AnimationSpeed,
+                interval: @Model.Interval,
+                autoplay: @Model.AutoPlay.ToString().ToLower()
+            });
+        });
+    </script>
+}
+    

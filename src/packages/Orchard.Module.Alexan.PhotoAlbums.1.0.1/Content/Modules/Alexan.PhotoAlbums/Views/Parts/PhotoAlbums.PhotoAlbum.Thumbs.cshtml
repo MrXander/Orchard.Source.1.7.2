@@ -1,0 +1,19 @@
+﻿
+@Display(Model.ContentItems)
+
+@using (Script.Foot())
+{
+    <script type="text/javascript">
+        $(function () {
+            $('a.thumb img').unbind('load').load(function(){
+                var $img = $(this);
+                var top = (@Model.ContentPart.ThumbSize.Height - $img.height()) / 2; 
+                    $img.css({ 'top': top});
+            }).each(function(){
+					//fixed IE and Opera issue. They don't call onLoad event if image was get from cache.
+					var $this = $(this);
+					$this.attr('src', $this.attr('src'));	
+				});
+        });
+    </script>
+}

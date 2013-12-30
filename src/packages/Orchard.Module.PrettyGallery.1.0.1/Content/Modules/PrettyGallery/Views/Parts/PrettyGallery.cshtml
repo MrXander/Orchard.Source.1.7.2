@@ -1,0 +1,15 @@
+﻿@model dynamic
+@{
+    Style.Require("prettyPhoto");
+    Style.Require("prettyGallery");
+    Script.Require("jQuery").AtHead();
+    Script.Require("prettyPhoto").AtHead();
+}
+@using (Script.Foot()) {
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("a[rel^='prettyPhoto']").prettyPhoto(@(new HtmlString((string)(Model.VM.PrettyParameters))));
+    });
+</script>
+}
+@{Html.RenderPartial((string)Model.VM.Layout, ((PrettyGallery.ViewModels.ViewPrettyGalleryViewModel)(Model.VM)));}

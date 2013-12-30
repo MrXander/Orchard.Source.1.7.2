@@ -1,0 +1,84 @@
+.file_upload,
+.file_upload_small,
+.file_upload_large {  
+    border: 1px solid #999999;
+    /*CSS3 properties*/
+    filter:progid:DXImageTransform.Microsoft.Gradient(GradientType=0, startColorstr='#f5f5f5',  endColorstr='#cbcbcb');
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f5f5), to(#cbcbcb));
+    background: -moz-linear-gradient(top, #f5f5f5, #cbcbcb);
+    box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 1.0), 1px 1px 1px rgba(102, 102, 102, 0.3);
+    -webkit-box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 1.0), 1px 1px 1px rgba(102, 102, 102, 0.3); 
+    -moz-box-shadow: inset 0px 0px 1px rgba(255, 255, 255, 1.0), 1px 1px 1px rgba(102, 102, 102, 0.3);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+}
+.file_upload {
+    position: relative;
+    overflow: hidden;
+    direction: ltr;
+    cursor: pointer;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.file_upload_small {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    font-size: auto;
+}
+
+.file_upload_large {
+    width: 100%;
+    height: 150px;
+    line-height: 150px;
+    font-size: 20px;
+}
+
+.file_upload_highlight {
+    background: silver;
+}
+
+.file_upload input {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    border: 300px solid transparent;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    filter: alpha(opacity=0);
+    -o-transform: translate(-300px, -300px) scale(10);
+    -moz-transform: translate(-800px, 0) scale(10);
+    
+}
+
+.file_upload iframe, .file_upload button {
+    display: none;
+}
+
+.file_upload_preview img {
+    width: 80px;
+}
+
+.file_upload_progress .ui-progressbar-value {
+    background: url(pbar-ani.gif);
+}
+
+.file_upload_progress div {
+    width: 150px;
+    height: 15px;
+}
+
+.file_upload_cancel button {
+    cursor: pointer;
+}

@@ -1,0 +1,62 @@
+﻿#thumb-container{
+    overflow: auto;
+ }
+#img-container{
+    margin: 1em auto 1em;
+    text-align: center;
+    background: url('../Content/images/lightbox-ico-loading.gif') center center no-repeat;    
+}
+.thumbUnselected{
+    opacity: 0.6;
+}
+.thumbSelected, thumb:hover{
+    opacity: 1;
+}
+#slideshow-image{
+    position: relative;
+    display: block;
+}
+#slideshow-btn-prev,
+.slideshow-btn-play,
+.slideshow-btn-stop,
+#slideshow-btn-next{
+    background-image: url('../Content/images/slideshow-buttons.png');
+    background-repeat: no-repeat;   
+    width: 32px; 
+    height: 32px; 
+    display: inline-block;
+}
+#slideshow-btn-prev{
+    background-position: 0px 0px;
+}
+.slideshow-btn-play{
+    background-position: 0px -32px;
+}
+.slideshow-btn-stop{
+    background-position: 0px -64px;
+}
+#slideshow-btn-next{
+    background-position: 0px -96px;
+}
+
+#slideshow-navigation{
+    margin: 1em auto;
+    overflow: hidden;
+}
+#slideshow-buttons{
+    margin: 0 auto;
+    text-align: center;
+    width: 100px;
+}
+#slideshow-title{
+    float: left; 
+    margin: 0 1em;
+    line-height: 2.0em; 
+}
+#slideshow-currentNumber{
+    float: right;
+    margin: 0 1em;
+    line-height: 2.0em; 
+}
+
+
