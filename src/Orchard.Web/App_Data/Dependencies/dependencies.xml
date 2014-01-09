@@ -13,10 +13,35 @@
     </References>
   </Dependency>
   <Dependency>
-    <ModuleName>Alexan.PhotoAlbums</ModuleName>
-    <VirtualPath>~/Modules/Alexan.PhotoAlbums/Alexan.PhotoAlbums.csproj</VirtualPath>
+    <ModuleName>Amba.ImagePowerTools</ModuleName>
+    <VirtualPath>~/Modules/Amba.ImagePowerTools/Amba.ImagePowerTools.csproj</VirtualPath>
     <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
+      <Reference>
+        <Name>AForge</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Amba.ImagePowerTools/Dependencies/AForge.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>AForge.Imaging</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Imaging.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>AForge.Math</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Math.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>ICSharpCode.SharpZipLib</Name>
+        <LoaderName>DynamicExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Amba.ImagePowerTools/Dependencies/ICSharpCode.SharpZipLib.dll</VirtualPath>
+      </Reference>
+      <Reference>
+        <Name>ImageResizer</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.MediaProcessing/bin/ImageResizer.dll</VirtualPath>
+      </Reference>
       <Reference>
         <Name>Orchard.Media</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -85,8 +110,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>InsertModuleInContent</ModuleName>
-    <VirtualPath>~/Modules/InsertModuleInContent/InsertModuleInContent.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/InsertModuleInContent/bin/InsertModuleInContent.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>Orchard.Scripting</Name>
@@ -130,41 +155,6 @@
     </References>
   </Dependency>
   <Dependency>
-    <ModuleName>Orchard.Tokens</ModuleName>
-    <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>Orchard.MediaLibrary</ModuleName>
-    <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Tokens</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>Mello.ImageGallery</ModuleName>
-    <VirtualPath>~/Modules/Mello.ImageGallery/Mello.ImageGallery.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>ICSharpCode.SharpZipLib</Name>
-        <LoaderName>DynamicExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Mello.ImageGallery/lib/ICSharpCode.SharpZipLib.dll</VirtualPath>
-      </Reference>
-      <Reference>
-        <Name>Orchard.MediaLibrary</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
-      </Reference>
-    </References>
-  </Dependency>
-  <Dependency>
     <ModuleName>MyTerra</ModuleName>
     <VirtualPath>~/Themes/MyTerra/MyTerra.csproj</VirtualPath>
     <LoaderName>DynamicExtensionLoader</LoaderName>
@@ -185,6 +175,12 @@
   <Dependency>
     <ModuleName>Orchard.Alias</ModuleName>
     <VirtualPath>~/Modules/Orchard.Alias/bin/Orchard.Alias.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References />
+  </Dependency>
+  <Dependency>
+    <ModuleName>Orchard.Tokens</ModuleName>
+    <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References />
   </Dependency>
@@ -550,6 +546,18 @@
     </References>
   </Dependency>
   <Dependency>
+    <ModuleName>Orchard.MediaLibrary</ModuleName>
+    <VirtualPath>~/Modules/Orchard.MediaLibrary/bin/Orchard.MediaLibrary.dll</VirtualPath>
+    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <References>
+      <Reference>
+        <Name>Orchard.Tokens</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Tokens/bin/Orchard.Tokens.dll</VirtualPath>
+      </Reference>
+    </References>
+  </Dependency>
+  <Dependency>
     <ModuleName>Orchard.ImageEditor</ModuleName>
     <VirtualPath>~/Modules/Orchard.ImageEditor/bin/Orchard.ImageEditor.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
@@ -909,18 +917,6 @@
     <VirtualPath>~/Modules/Orchard.Warmup/bin/Orchard.Warmup.dll</VirtualPath>
     <LoaderName>PrecompiledExtensionLoader</LoaderName>
     <References />
-  </Dependency>
-  <Dependency>
-    <ModuleName>PrettyGallery</ModuleName>
-    <VirtualPath>~/Modules/PrettyGallery/PrettyGallery.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References>
-      <Reference>
-        <Name>Orchard.Media</Name>
-        <LoaderName>PrecompiledExtensionLoader</LoaderName>
-        <VirtualPath>~/Modules/Orchard.Media/bin/Orchard.Media.dll</VirtualPath>
-      </Reference>
-    </References>
   </Dependency>
   <Dependency>
     <ModuleName>Reports</ModuleName>

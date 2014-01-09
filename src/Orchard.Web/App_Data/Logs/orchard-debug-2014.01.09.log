@@ -1,0 +1,332 @@
+2014-01-09 13:20:38,098 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 13:20:52,155 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,164 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Imaging.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,166 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Math.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,168 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/ICSharpCode.SharpZipLib.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,177 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,179 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Imaging.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,181 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Math.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,183 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/ICSharpCode.SharpZipLib.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,448 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,450 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Imaging.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,452 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Math.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,453 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/ICSharpCode.SharpZipLib.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,461 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,463 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Imaging.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,465 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Math.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,467 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/ICSharpCode.SharpZipLib.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,724 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,726 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Imaging.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,728 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Math.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,730 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/ICSharpCode.SharpZipLib.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,982 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,984 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Imaging.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,986 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Math.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:52,988 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/ICSharpCode.SharpZipLib.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:53,245 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:53,247 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Imaging.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:53,249 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/AForge.Math.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:20:53,251 [6] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Amba.ImagePowerTools/Dependencies/ICSharpCode.SharpZipLib.dll.
+System.Web.HttpException (0x80004005): ??? ?????????? ??????????, ??????????????????? ??? ?????????? '.dll'. ?? ?????? ???????????????? ???? ?? ???????? <compilation><buildProviders> ? machine.config ??? web.config. ?????????, ??? ?? ????? ??????? BuildProviderAppliesToAttribute, ?????????? ???????? 'Web' ??? 'All'.
+   ? System.Web.Compilation.CompilationUtil.GetBuildProviderTypeFromExtension(CompilationSection config, String extension, BuildProviderAppliesTo neededFor, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CreateBuildProvider(VirtualPath virtualPath, BuildProviderAppliesTo neededFor, CompilationSection compConfig, ICollection referencedAssemblies, Boolean failIfUnknown)
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-01-09 13:27:36,221 [24] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 13:27:37,279 [24] Orchard.FileSystems.AppData.AppDataFolder - Could not delete recipe execution folder C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\App_Data\RecipeQueue\58aa8fd4e6fc45c5a8b514580cab5a05 under "App_Data" folder
+2014-01-09 13:27:45,551 [29] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 13:29:16,870 [7] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 13:29:19,696 [21] Orchard.Recipes.Services.RecipeStepExecutor - Recipe execution a95c36f1447a440a91a9f261fae62386 was cancelled because a step failed to execute
+System.InvalidOperationException: ?????????????????? ???????? ????? ?????? ???????????????? ????????
+   ? System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   ? Orchard.Environment.Features.FeatureManager.<EnableFeature>b__1e(String currentFeatureId, IDictionary`2 featuresState) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 144
+   ? Orchard.Environment.Features.FeatureManager.GetAffectedFeatures(String featureId, IDictionary`2 features, Func`3 getAffectedDependencies) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 207
+   ? Orchard.Environment.Features.FeatureManager.EnableFeature(String featureId, IDictionary`2 availableFeatures, Boolean force) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 165
+   ? Orchard.Environment.Features.FeatureManager.<>c__DisplayClass9.<EnableFeatures>b__4(String featureId) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 73
+   ? System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ? System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ? System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ? Orchard.Environment.Features.FeatureManager.EnableFeatures(IEnumerable`1 featureIds, Boolean force) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 72
+   ? Orchard.Recipes.RecipeHandlers.FeatureRecipeHandler.ExecuteRecipeStep(RecipeContext recipeContext)
+   ? Orchard.Recipes.Services.RecipeStepExecutor.ExecuteNextStep(String executionId)
+2014-01-09 13:29:19,765 [21] Orchard.Exceptions.DefaultExceptionPolicy - An unexpected exception was caught
+Orchard.OrchardCoreException: Recipe execution with id a95c36f1447a440a91a9f261fae62386 was cancelled because the "Feature" step failed to execute. The following exception was thrown: ?????????????????? ???????? ????? ?????? ???????????????? ????????. Refer to the error logs for more information.
+   ? Orchard.Recipes.Services.RecipeStepExecutor.ExecuteNextStep(String executionId)
+   ? Orchard.Recipes.Services.RecipeScheduler.ExecuteWork(String executionId)
+   ? Orchard.Events.DelegateHelper.<>c__DisplayClass2b`2.<BuildAction>b__2a(Object target, Object[] p) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DelegateHelper.cs:?????? 116
+   ? Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 81
+   ? Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 67
+   ? Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 53
+2014-01-09 14:09:07,743 [28] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 14:09:08,286 [27] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 14:22:26,863 [29] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "imagepowertools_28a2f1dc98c7"
+2014-01-09 14:22:27,560 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 14:32:07,981 [30] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 14:32:08,361 [30] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 15:16:14,287 [78] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 15:16:14,658 [78] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 15:24:13,162 [78] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 15:24:13,639 [78] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 15:27:09,177 [83] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 15:27:09,588 [83] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 15:37:07,548 [30] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 15:37:08,682 [30] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 15:38:41,108 [24] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 15:38:43,574 [83] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 15:38:44,144 [83] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 16:28:13,780 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 16:28:15,604 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 18:21:20,878 [70] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 18:21:21,818 [70] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 18:29:38,025 [78] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 18:29:38,435 [78] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-09 18:33:04,781 [73] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 18:39:15,877 [72] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-09 18:39:16,283 [72] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"

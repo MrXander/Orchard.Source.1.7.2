@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 using System.Web.Mvc.Html;
 using Orchard.ContentManagement;
@@ -14,10 +15,15 @@ namespace Orchard.Mvc.Html {
         }
 
         public static MvcHtmlString ItemDisplayLink(this HtmlHelper html, IContent content) {
-            return ItemDisplayLink(html, null, content);
+            return ItemDisplayLink(html, null, content, null);
         }
 
         public static MvcHtmlString ItemDisplayLink(this HtmlHelper html, string linkText, IContent content) {
+            return ItemDisplayLink(html, linkText, content, null);
+        }
+
+        public static MvcHtmlString ItemDisplayLink(this HtmlHelper html, string linkText, IContent content, IDictionary<string, object> htmlAttributes)
+        {
             var metadata = content.ContentItem.ContentManager.GetItemMetadata(content);
             if (metadata.DisplayRouteValues == null)
                 return null;
@@ -25,7 +31,8 @@ namespace Orchard.Mvc.Html {
             return html.ActionLink(
                 NonNullOrEmpty(linkText, metadata.DisplayText, "view"),
                 Convert.ToString(metadata.DisplayRouteValues["action"]),
-                metadata.DisplayRouteValues);
+                metadata.DisplayRouteValues,
+                htmlAttributes);
         }
 
         public static string ItemDisplayUrl(this UrlHelper urlHelper, IContent content) {

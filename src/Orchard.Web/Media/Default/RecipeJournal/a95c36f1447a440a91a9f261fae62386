@@ -1,0 +1,5 @@
+<RecipeJournal>
+  <Status>Failed</Status>
+  <Message>Executing step Feature.</Message>
+  <Message>Recipe execution with id a95c36f1447a440a91a9f261fae62386 was cancelled because the "Feature" step failed to execute. The following exception was thrown: Последовательность содержит более одного соответствующего элемента. Refer to the error logs for more information.</Message>
+</RecipeJournal>

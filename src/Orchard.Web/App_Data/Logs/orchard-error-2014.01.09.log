@@ -1,0 +1,21 @@
+2014-01-09 13:29:19,696 [21] Orchard.Recipes.Services.RecipeStepExecutor - Recipe execution a95c36f1447a440a91a9f261fae62386 was cancelled because a step failed to execute
+System.InvalidOperationException: ?????????????????? ???????? ????? ?????? ???????????????? ????????
+   ? System.Linq.Enumerable.Single[TSource](IEnumerable`1 source, Func`2 predicate)
+   ? Orchard.Environment.Features.FeatureManager.<EnableFeature>b__1e(String currentFeatureId, IDictionary`2 featuresState) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 144
+   ? Orchard.Environment.Features.FeatureManager.GetAffectedFeatures(String featureId, IDictionary`2 features, Func`3 getAffectedDependencies) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 207
+   ? Orchard.Environment.Features.FeatureManager.EnableFeature(String featureId, IDictionary`2 availableFeatures, Boolean force) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 165
+   ? Orchard.Environment.Features.FeatureManager.<>c__DisplayClass9.<EnableFeatures>b__4(String featureId) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 73
+   ? System.Linq.Enumerable.WhereSelectListIterator`2.MoveNext()
+   ? System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   ? System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   ? Orchard.Environment.Features.FeatureManager.EnableFeatures(IEnumerable`1 featureIds, Boolean force) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\Features\FeatureManager.cs:?????? 72
+   ? Orchard.Recipes.RecipeHandlers.FeatureRecipeHandler.ExecuteRecipeStep(RecipeContext recipeContext)
+   ? Orchard.Recipes.Services.RecipeStepExecutor.ExecuteNextStep(String executionId)
+2014-01-09 13:29:19,765 [21] Orchard.Exceptions.DefaultExceptionPolicy - An unexpected exception was caught
+Orchard.OrchardCoreException: Recipe execution with id a95c36f1447a440a91a9f261fae62386 was cancelled because the "Feature" step failed to execute. The following exception was thrown: ?????????????????? ???????? ????? ?????? ???????????????? ????????. Refer to the error logs for more information.
+   ? Orchard.Recipes.Services.RecipeStepExecutor.ExecuteNextStep(String executionId)
+   ? Orchard.Recipes.Services.RecipeScheduler.ExecuteWork(String executionId)
+   ? Orchard.Events.DelegateHelper.<>c__DisplayClass2b`2.<BuildAction>b__2a(Object target, Object[] p) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DelegateHelper.cs:?????? 116
+   ? Orchard.Events.DefaultOrchardEventBus.TryInvokeMethod(IEventHandler eventHandler, Type interfaceType, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 81
+   ? Orchard.Events.DefaultOrchardEventBus.TryInvoke(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 arguments, IEnumerable& returnValue) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 67
+   ? Orchard.Events.DefaultOrchardEventBus.TryNotifyHandler(IEventHandler eventHandler, String messageName, String interfaceName, String methodName, IDictionary`2 eventData, IEnumerable& returnValue) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 53

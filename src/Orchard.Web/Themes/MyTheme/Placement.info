@@ -2,7 +2,16 @@
   <!-- Customize where the shapes are rendered -->
   <Place Parts_Title="-"/>
   <Place Parts_Common_Metadata="-"/>
-  
+
+  <Match ContentType="BlogPost">
+    <Match DisplayType="Summary">
+      <Place Fields_Common_Text="-"/>
+    </Match>
+    <Match DisplayType="Detail">
+      <Place Fields_Common_Text="-"/>
+    </Match>
+  </Match>
+
   <!-- 
   <Place Parts_Blogs_BlogArchives="Content:before"/>
   <Place Parts_Blogs_RecentBlogPosts="Content:after"/>
