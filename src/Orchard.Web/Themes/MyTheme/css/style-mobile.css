@@ -329,15 +329,15 @@
 	{
 	}
 
-		#content > section,
-		#content > article
+		#content section,
+		#content article
 		{
 			margin: 4em 0 0 0 !important;
 			padding: 4em 0 0 0 !important;
 		}
 		
-		#content > section:first-child,
-		#content > article:first-child
+		#content section:first-child,
+		#content article:first-child
 		{
 			margin: 0 !important;
 			padding: 0 !important;

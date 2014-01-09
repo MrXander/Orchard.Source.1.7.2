@@ -1,0 +1,6 @@
+syntax: glob
+.svn
+bin/
+obj/
+Bin/*
+*.user

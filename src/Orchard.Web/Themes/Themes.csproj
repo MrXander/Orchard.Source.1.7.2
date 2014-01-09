@@ -108,12 +108,14 @@
     <Content Include="MyTheme\images\pic05.jpg" />
     <Content Include="MyTheme\images\pic06.jpg" />
     <Content Include="MyTheme\images\pic07.jpg" />
-    <Content Include="MyTheme\Scripts\config.js" />
-    <Content Include="MyTheme\Scripts\html5shiv.js" />
-    <Content Include="MyTheme\Scripts\jquery.dropotron.min.js" />
-    <Content Include="MyTheme\Scripts\jquery.min.js" />
-    <Content Include="MyTheme\Scripts\skel-panels.min.js" />
-    <Content Include="MyTheme\Scripts\skel.min.js" />
+    <Content Include="MyTheme\scripts\config.js" />
+    <Content Include="MyTheme\scripts\first-gallery.js" />
+    <Content Include="MyTheme\scripts\html5shiv.js" />
+    <Content Include="MyTheme\scripts\jquery.dropotron.min.js" />
+    <Content Include="MyTheme\scripts\jquery.galleriffic.js" />
+    <Content Include="MyTheme\scripts\jquery.min.js" />
+    <Content Include="MyTheme\scripts\skel-panels.min.js" />
+    <Content Include="MyTheme\scripts\skel.min.js" />
     <Content Include="MyTheme\Theme.png" />
     <Content Include="MyTheme\Theme.txt" />
     <Content Include="MyTheme\ThemeZonePreview.png" />
@@ -254,7 +256,7 @@
     <Content Include="MyTheme\Placement.info">
       <SubType>Designer</SubType>
     </Content>
-    <Content Include="MyTheme\Scripts\Web.config" />
+    <Content Include="MyTheme\scripts\Web.config" />
     <Content Include="MyTheme\Views\BadgeOfHonor.cshtml" />
     <Content Include="MyTheme\Views\Branding.cshtml" />
     <Content Include="MyTheme\Views\Layout.cshtml" />
@@ -281,6 +283,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MyTheme\Views\SubmenuItemLink.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Blogs.BlogPost.List.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Title_Summary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Common.Body.Summary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Content.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Common.Metadata.Summary.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

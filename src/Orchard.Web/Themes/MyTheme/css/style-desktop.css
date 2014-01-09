@@ -333,15 +333,15 @@
 	{
 	}
 
-		#content > section,
-		#content > article
+		#content section,
+		#content article
 		{
 			margin: 5em 0 0 0;
 			padding: 5em 0 0 0;
 		}
 		
-		#content > section:first-child,
-		#content > article:first-child
+		#content section:first-child,
+		#content article:first-child
 		{
 			margin: 0;
 			padding: 0;
