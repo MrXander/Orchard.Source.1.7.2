@@ -44,31 +44,7 @@
     ***************************************************************/
 
     Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
-
-    /* Layout classification based on filled zones
-    ***************************************************************/
-
-    //Add classes to the wrapper div to toggle aside widget zones on and off
-    var asideClass = CalcuClassify(new[] { "AsideFirst", "AsideSecond" }, "aside-"); // for aside-1, aside-2 or aside-12 if any of the aside zones are filled
-    if (HasText(asideClass))
-    {
-        Model.Classes.Add(asideClass);
-    }
-
-    //Add classes to the wrapper div to toggle tripel widget zones on and off
-    var tripelClass = CalcuClassify(new[] { "TripelFirst", "TripelSecond", "TripelThird" }, "tripel-"); // for tripel-1, triple-2, etc. if any of the tripel zones are filled
-    if (HasText(tripelClass))
-    {
-        Model.Classes.Add(tripelClass);
-    }
-
-    //Add classes to the wrapper div to toggle quad widget zones on and off
-    var footerQuadClass = CalcuClassify(new[] { "FooterQuadFirst", "FooterQuadSecond", "FooterQuadThird", "FooterQuadFourth" }, "split-"); // for quad-1, quad-2, etc. if any of the quad zones are filled
-    if (HasText(footerQuadClass))
-    {
-        Model.Classes.Add(footerQuadClass);
-    }
-
+    
     /* Inserting some ad hoc shapes
     ***************************************************************/
 

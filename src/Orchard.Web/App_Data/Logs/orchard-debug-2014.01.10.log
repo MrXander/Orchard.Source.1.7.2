@@ -1,0 +1,70 @@
+2014-01-10 12:10:00,770 [20] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-10 12:18:10,567 [64] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-10 12:18:10,957 [64] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-10 14:20:12,715 [87] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - ObjectDisposedException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null]]
+System.ObjectDisposedException: Instances cannot be resolved and nested lifetimes cannot be created from this LifetimeScope as it has already been disposed.
+   ? Autofac.Core.Lifetime.LifetimeScope.CheckNotDisposed() ? c:\Projects\OSS\autofac\Core\Source\Autofac\Core\Lifetime\LifetimeScope.cs:?????? 327
+   ? Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters) ? c:\Projects\OSS\autofac\Core\Source\Autofac\Core\Lifetime\LifetimeScope.cs:?????? 224
+   ? Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance) ? c:\Projects\OSS\autofac\Core\Source\Autofac\ResolutionExtensions.cs:?????? 736
+   ? Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters) ? c:\Projects\OSS\autofac\Core\Source\Autofac\ResolutionExtensions.cs:?????? 343
+   ? Autofac.Features.Indexed.KeyedServiceIndex`2.get_Item(TKey key) ? c:\Projects\OSS\autofac\Core\Source\Autofac\Features\Indexed\KeyedServiceIndex.cs:?????? 47
+   ? Orchard.Events.DefaultOrchardEventBus.<NotifyHandlers>d__0.MoveNext() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 38
+   ? System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   ? System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   ? Orchard.Events.DefaultOrchardEventBus.Notify(String messageName, IDictionary`2 eventData) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 27
+   ? Orchard.Events.EventsInterceptor.Intercept(IInvocation invocation) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\EventsInterceptor.cs:?????? 26
+   ? Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ? IAuthorizationServiceEventHandlerProxyf1898a042717433594a0daa0a4d21014.Checking(CheckAccessContext context)
+   ? Orchard.Roles.Services.RolesBasedAuthorizationService.TryCheckAccess(Permission permission, IUser user, IContent content)
+   ? Orchard.Security.Authorizer.Authorize(Permission permission, IContent content, LocalizedString message) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Security\Authorizer.cs:?????? 72
+   ? Orchard.Security.Authorizer.Authorize(Permission permission) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Security\Authorizer.cs:?????? 60
+   ? Orchard.DesignerTools.Services.ShapeTracingFactory.IsActivable()
+   ? Orchard.DesignerTools.Services.ShapeTracingFactory.OnDisplaying(ShapeDisplayingContext context)
+   ? Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:?????? 78
+   ? Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\InvokeExtensions.cs:?????? 17
+2014-01-10 14:20:12,734 [87] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - ObjectDisposedException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null]]
+System.ObjectDisposedException: Instances cannot be resolved and nested lifetimes cannot be created from this LifetimeScope as it has already been disposed.
+   ? Autofac.Core.Lifetime.LifetimeScope.CheckNotDisposed() ? c:\Projects\OSS\autofac\Core\Source\Autofac\Core\Lifetime\LifetimeScope.cs:?????? 327
+   ? Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters) ? c:\Projects\OSS\autofac\Core\Source\Autofac\Core\Lifetime\LifetimeScope.cs:?????? 224
+   ? Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance) ? c:\Projects\OSS\autofac\Core\Source\Autofac\ResolutionExtensions.cs:?????? 736
+   ? Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters) ? c:\Projects\OSS\autofac\Core\Source\Autofac\ResolutionExtensions.cs:?????? 343
+   ? Autofac.Features.Indexed.KeyedServiceIndex`2.get_Item(TKey key) ? c:\Projects\OSS\autofac\Core\Source\Autofac\Features\Indexed\KeyedServiceIndex.cs:?????? 47
+   ? Orchard.Events.DefaultOrchardEventBus.<NotifyHandlers>d__0.MoveNext() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 38
+   ? System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   ? System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   ? Orchard.Events.DefaultOrchardEventBus.Notify(String messageName, IDictionary`2 eventData) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 27
+   ? Orchard.Events.EventsInterceptor.Intercept(IInvocation invocation) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\EventsInterceptor.cs:?????? 26
+   ? Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ? IAuthorizationServiceEventHandlerProxyf1898a042717433594a0daa0a4d21014.Checking(CheckAccessContext context)
+   ? Orchard.Roles.Services.RolesBasedAuthorizationService.TryCheckAccess(Permission permission, IUser user, IContent content)
+   ? Orchard.Security.Authorizer.Authorize(Permission permission, IContent content, LocalizedString message) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Security\Authorizer.cs:?????? 72
+   ? Orchard.Security.Authorizer.Authorize(Permission permission) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Security\Authorizer.cs:?????? 60
+   ? Orchard.DesignerTools.Services.ShapeTracingFactory.IsActivable()
+   ? Orchard.DesignerTools.Services.ShapeTracingFactory.OnDisplaying(ShapeDisplayingContext context)
+   ? Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:?????? 78
+   ? Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\InvokeExtensions.cs:?????? 17
+2014-01-10 14:20:12,748 [87] Orchard.DisplayManagement.Implementation.DefaultDisplayManager - ObjectDisposedException thrown from Action`1 by System.Action`1[[Orchard.DisplayManagement.Implementation.ShapeDisplayingContext, Orchard.Framework, Version=1.7.2.0, Culture=neutral, PublicKeyToken=null]]
+System.ObjectDisposedException: Instances cannot be resolved and nested lifetimes cannot be created from this LifetimeScope as it has already been disposed.
+   ? Autofac.Core.Lifetime.LifetimeScope.CheckNotDisposed() ? c:\Projects\OSS\autofac\Core\Source\Autofac\Core\Lifetime\LifetimeScope.cs:?????? 327
+   ? Autofac.Core.Lifetime.LifetimeScope.ResolveComponent(IComponentRegistration registration, IEnumerable`1 parameters) ? c:\Projects\OSS\autofac\Core\Source\Autofac\Core\Lifetime\LifetimeScope.cs:?????? 224
+   ? Autofac.ResolutionExtensions.TryResolveService(IComponentContext context, Service service, IEnumerable`1 parameters, Object& instance) ? c:\Projects\OSS\autofac\Core\Source\Autofac\ResolutionExtensions.cs:?????? 736
+   ? Autofac.ResolutionExtensions.ResolveService(IComponentContext context, Service service, IEnumerable`1 parameters) ? c:\Projects\OSS\autofac\Core\Source\Autofac\ResolutionExtensions.cs:?????? 343
+   ? Autofac.Features.Indexed.KeyedServiceIndex`2.get_Item(TKey key) ? c:\Projects\OSS\autofac\Core\Source\Autofac\Features\Indexed\KeyedServiceIndex.cs:?????? 47
+   ? Orchard.Events.DefaultOrchardEventBus.<NotifyHandlers>d__0.MoveNext() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 38
+   ? System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   ? System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   ? Orchard.Events.DefaultOrchardEventBus.Notify(String messageName, IDictionary`2 eventData) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\DefaultOrchardEventBus.cs:?????? 27
+   ? Orchard.Events.EventsInterceptor.Intercept(IInvocation invocation) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Events\EventsInterceptor.cs:?????? 26
+   ? Castle.DynamicProxy.AbstractInvocation.Proceed()
+   ? IAuthorizationServiceEventHandlerProxyf1898a042717433594a0daa0a4d21014.Checking(CheckAccessContext context)
+   ? Orchard.Roles.Services.RolesBasedAuthorizationService.TryCheckAccess(Permission permission, IUser user, IContent content)
+   ? Orchard.Security.Authorizer.Authorize(Permission permission, IContent content, LocalizedString message) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Security\Authorizer.cs:?????? 72
+   ? Orchard.Security.Authorizer.Authorize(Permission permission) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Security\Authorizer.cs:?????? 60
+   ? Orchard.DesignerTools.Services.ShapeTracingFactory.IsActivable()
+   ? Orchard.DesignerTools.Services.ShapeTracingFactory.OnDisplaying(ShapeDisplayingContext context)
+   ? Orchard.DisplayManagement.Implementation.DefaultDisplayManager.<>c__DisplayClassc.<Execute>b__5(Action`1 action) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\DisplayManagement\Implementation\DefaultDisplayManager.cs:?????? 78
+   ? Orchard.InvokeExtensions.Invoke[TEvents](IEnumerable`1 events, Action`1 dispatch, ILogger logger) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\InvokeExtensions.cs:?????? 17
+2014-01-10 14:53:06,233 [85] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-10 14:53:06,615 [85] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-10 15:04:45,137 [47] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-10 15:04:45,550 [47] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"

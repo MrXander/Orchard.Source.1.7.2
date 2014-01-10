@@ -17,7 +17,7 @@
 		background: #f0f0f0;
 	}
 
-	body,input,textarea,select
+	body,input,textarea,select,button
 	{
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
@@ -38,7 +38,7 @@
 			border: 0;
 		}
 
-	a
+	a, button
 	{
 		color: #666;
 		text-decoration: none;
@@ -59,7 +59,7 @@
 			transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
 		}
 	
-		a:hover
+		a:hover, button:hover
 		{
 			color: #ed786a;
 			border-bottom-color: rgba(255,255,255,0);
@@ -1231,3 +1231,18 @@
 		border-top: solid 2px #e5e5e5;
 		text-align: center;
 	}
+
+
+/*********************************************************************************/
+/* Comments
+/*********************************************************************************/
+.comments li li
+{
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+    li .text 
+    {
+        margin: 0;
+    }
