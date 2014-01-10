@@ -68,3 +68,5 @@ System.ObjectDisposedException: Instances cannot be resolved and nested lifetime
 2014-01-10 14:53:06,615 [85] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
 2014-01-10 15:04:45,137 [47] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
 2014-01-10 15:04:45,550 [47] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-10 16:30:26,414 [36] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-10 16:30:26,801 [36] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
