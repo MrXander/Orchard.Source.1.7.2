@@ -116,6 +116,7 @@
     <Content Include="MyTheme\scripts\jquery.min.js" />
     <Content Include="MyTheme\scripts\skel-panels.min.js" />
     <Content Include="MyTheme\scripts\skel.min.js" />
+    <Content Include="MyTheme\scripts\test.js" />
     <Content Include="MyTheme\Theme.png" />
     <Content Include="MyTheme\Theme.txt" />
     <Content Include="MyTheme\ThemeZonePreview.png" />
@@ -218,6 +219,10 @@
       <Project>{9916839C-39FC-4CEB-A5AF-89CA7E87119F}</Project>
       <Name>Orchard.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Modules\Orchard.Comments\Orchard.Comments.csproj">
+      <Project>{14C049FD-B35B-415A-A824-87F26B26E7FD}</Project>
+      <Name>Orchard.Comments</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="TheThemeMachine\Views\Pager.cshtml" />
@@ -257,7 +262,6 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="MyTheme\scripts\Web.config" />
-    <Content Include="MyTheme\Views\BadgeOfHonor.cshtml" />
     <Content Include="MyTheme\Views\Branding.cshtml" />
     <Content Include="MyTheme\Views\Layout.cshtml" />
     <Content Include="MyTheme\Views\Menu.cshtml" />
@@ -298,6 +302,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MyTheme\Views\Parts.Common.Metadata.Summary.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Content.Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\EditorTemplates\Parts.Comments.Comments.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\EditorTemplates\Parts.Comment.AdminEdit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\EditorTemplates\Parts.Comment.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.CommentForm.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.ListOfComments.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

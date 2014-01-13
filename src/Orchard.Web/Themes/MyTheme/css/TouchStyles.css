@@ -1,0 +1,58 @@
+/*-------------------------
+	General Styles
+--------------------------*/
+
+.thumbs  a, .thumbs a:visited {
+	outline:none;
+	color:#1c4f64;
+}
+
+.thumbs a:hover{
+	text-decoration:none;
+}
+
+/*----------------------------
+	Thumbnails
+-----------------------------*/
+
+.thumbs{	
+	text-align:left;
+}
+
+.thumbs a{
+	width:120px;
+	height:120px;
+	display:inline-block;
+	border:7px solid #303030;
+	box-shadow:0 1px 3px rgba(0,0,0,0.5);
+	border-radius:4px;
+	margin: 6px 6px 40px;
+	position:relative;
+	text-decoration:none;
+	
+	background-position:center center;
+	background-repeat: no-repeat;
+	
+	background-size:cover;
+	-moz-background-size:cover;
+	-webkit-background-size:cover;
+	
+	text-align: center;
+}
+
+.thumbs a:after{
+	background-color: #303030;
+    border-radius: 7px;
+    bottom: -117px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    color: #FFFFFF;
+    content: attr(title);
+    display: inline-block;
+    font-size: 12px;
+    max-width: 100px;
+    overflow: hidden;
+    padding: 0px 10px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+}

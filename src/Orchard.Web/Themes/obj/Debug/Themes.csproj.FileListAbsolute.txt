@@ -82,3 +82,11 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\bin\System.Net.Http.Form
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\obj\Debug\Themes.csprojResolveAssemblyReference.cache
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\obj\Debug\Themes.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\obj\Debug\Themes.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\bin\Orchard.Comments.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\bin\Orchard.Workflows.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\bin\Orchard.Tokens.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\bin\Orchard.Forms.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\bin\Orchard.Comments.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\bin\Orchard.Workflows.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\bin\Orchard.Tokens.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Themes\bin\Orchard.Forms.pdb

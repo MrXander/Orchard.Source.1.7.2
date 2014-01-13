@@ -1,0 +1,4 @@
+2014-01-13 12:24:36,924 [35] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "imagepowertools_28a2f1dc98c7"
+2014-01-13 12:24:37,797 [23] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-13 12:30:13,322 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-13 12:30:13,884 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
