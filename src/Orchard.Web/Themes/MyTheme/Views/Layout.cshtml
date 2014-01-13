@@ -10,31 +10,24 @@
 @{
     /* Global includes for the theme
     ***************************************************************/
-
-    //SetMeta(httpEquiv: "X-UA-Compatible", content: "IE=edge,chrome=1");
-    SetMeta(name: "viewport", content: "width=1040");
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600|Arvo:700" rel="stylesheet" type="text/css" />
-    <!--[if lte IE 8]><script src="@Url.Content("~/themes/mytheme/scripts/html5shiv.js")"></script><![endif]-->    
+    
+    SetMeta(name: "viewport", content: "width=1040");    
+    <link href='http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <!--[if lte IE 8]>Script.Include("html5shiv.js")<![endif]-->
     Script.Include("jquery.min.js").AtHead();
     Script.Include("jquery.dropotron.min.js").AtHead();
     Script.Include("config.js").AtHead();
     Script.Include("skel.min.js").AtHead();
     Script.Include("skel-panels.min.js").AtHead();
     
-@*<script src="@Url.Content("~/themes/mytheme/scripts/jquery.min.js")"></script>
-	<script src="@Url.Content("~/themes/mytheme/scripts/jquery.dropotron.min.js")"></script>
-	<script src="@Url.Content("~/themes/mytheme/scripts/config.js")"></script>
-	<script src="@Url.Content("~/themes/mytheme/scripts/skel.min.js")"></script>
-    <script src="@Url.Content("~/themes/mytheme/scripts/skel-panels.min.js")"></script>*@
     if (Request.Path.EndsWith("/first-gallery"))
     {
         using (Script.Head())
-        {
-            Script.Include("jquery.galleriffic.js").AtHead();
+        {            
             Script.Include("first-gallery.js").AtHead();
         }
     }
-    <noscript>
+    <noscript>        
         <link rel="stylesheet" href="@Url.Content("~/themes/mytheme/css/skel-noscript.css")" />
         <link rel="stylesheet" href="@Url.Content("~/themes/mytheme/css/style.css")" />
         <link rel="stylesheet" href="@Url.Content("~/themes/mytheme/css/style-desktop.css")" />
@@ -48,8 +41,7 @@
     /* Inserting some ad hoc shapes
     ***************************************************************/
 
-    WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page
-    //WorkContext.Layout.Footer.Add(New.BadgeOfHonor(), "5"); // Powered by Orchard
+    WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page    
     WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
 }
 

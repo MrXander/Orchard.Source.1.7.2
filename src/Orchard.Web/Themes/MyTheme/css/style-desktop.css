@@ -103,7 +103,7 @@
 	{
 	}
 	
-		.is-excerpt .date
+		.is-excerpt .date, .comment-count
 		{
 			display: inline-block;
 			font-size: 0.85em;
@@ -343,7 +343,7 @@
 		#content section:first-child,
 		#content article:first-child
 		{
-			margin: 0;
+			margin: 0 0 50px 0;
 			padding: 0;
 		}
 	
