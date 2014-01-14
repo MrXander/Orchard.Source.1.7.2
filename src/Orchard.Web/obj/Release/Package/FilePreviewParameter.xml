@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="valera12345-2.hosting.parking.ru" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\D\\tmp\\My\\Orchard\.Source\.1\.7\.2\\src\\Orchard\.Web\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\D\\tmp\\My\\Orchard\.Source\.1\.7\.2\\src\\Orchard\.Web\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="valera12345-2.hosting.parking.ru/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\D\\tmp\\My\\Orchard\.Source\.1\.7\.2\\src\\Orchard\.Web\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+</parameters>

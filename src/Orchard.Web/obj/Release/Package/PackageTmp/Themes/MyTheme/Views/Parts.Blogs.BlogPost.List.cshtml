@@ -1,0 +1,9 @@
+﻿@{
+    IEnumerable<object> blogPosts = Model.ContentItems;    
+    Model.ContentItems.Classes.Add("is-excerpt");
+    Model.ContentItems.Classes.Add("divided");
+}
+@Display(Model.ContentItems)
+@if (blogPosts == null || !blogPosts.Any()) {
+<p>@T("There are no posts for this blog.")</p>
+}

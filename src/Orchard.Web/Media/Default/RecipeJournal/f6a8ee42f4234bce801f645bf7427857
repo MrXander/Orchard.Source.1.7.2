@@ -1,0 +1,5 @@
+<RecipeJournal>
+  <Status>Failed</Status>
+  <Message>Executing step Feature.</Message>
+  <Message>Recipe execution with id f6a8ee42f4234bce801f645bf7427857 was cancelled because the "Feature" step failed to execute. The following exception was thrown: Failed to get state for feature RM.QuickLogOn. Refer to the error logs for more information.</Message>
+</RecipeJournal>

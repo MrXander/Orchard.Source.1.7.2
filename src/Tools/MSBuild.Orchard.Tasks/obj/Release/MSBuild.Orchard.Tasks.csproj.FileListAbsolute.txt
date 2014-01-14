@@ -1,0 +1,5 @@
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\MSBuild.Orchard.Tasks\bin\Release\MSBuild.Orchard.Tasks.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\MSBuild.Orchard.Tasks\bin\Release\MSBuild.Orchard.Tasks.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\MSBuild.Orchard.Tasks\obj\Release\MSBuild.Orchard.Tasks.csprojResolveAssemblyReference.cache
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\MSBuild.Orchard.Tasks\obj\Release\MSBuild.Orchard.Tasks.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\MSBuild.Orchard.Tasks\obj\Release\MSBuild.Orchard.Tasks.pdb

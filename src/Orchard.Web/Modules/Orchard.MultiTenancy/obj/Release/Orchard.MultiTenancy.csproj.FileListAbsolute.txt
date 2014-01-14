@@ -1,0 +1,4 @@
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.MultiTenancy\bin\Orchard.MultiTenancy.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.MultiTenancy\bin\Orchard.MultiTenancy.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.MultiTenancy\obj\Release\Orchard.MultiTenancy.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.MultiTenancy\obj\Release\Orchard.MultiTenancy.pdb

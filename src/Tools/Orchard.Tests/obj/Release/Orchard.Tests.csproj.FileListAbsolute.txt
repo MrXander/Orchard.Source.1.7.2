@@ -1,0 +1,11 @@
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\bin\Release\Orchard.Tests.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\bin\Release\Orchard.Tests.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\bin\Release\Moq.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\bin\Release\nunit.framework.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\bin\Release\Orchard.exe
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\bin\Release\Orchard.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\bin\Release\Moq.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\bin\Release\Moq.xml
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\obj\Release\Orchard.Tests.csprojResolveAssemblyReference.cache
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\obj\Release\Orchard.Tests.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Tools\Orchard.Tests\obj\Release\Orchard.Tests.pdb
