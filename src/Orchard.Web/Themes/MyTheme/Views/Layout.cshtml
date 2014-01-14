@@ -7,13 +7,18 @@
         return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
     }
 }
+
 @{
-    /* Global includes for the theme
+/* Global includes for the theme
     ***************************************************************/
-    
-    SetMeta(name: "viewport", content: "width=1040");    
-    <link href='http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <!--[if lte IE 8]>Script.Include("html5shiv.js")<![endif]-->
+
+    SetMeta(name: "viewport", content: "width=1040");
+}
+<link href='http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+
+<!--[if lte IE 8]>@{ Script.Include("html5shiv.js"); }<![endif]-->
+@{
     Script.Include("jquery.min.js").AtHead();
     Script.Include("jquery.dropotron.min.js").AtHead();
     Script.Include("config.js").AtHead();
@@ -27,22 +32,26 @@
             Script.Include("first-gallery.js").AtHead();
         }
     }
+}
+    
     <noscript>        
         <link rel="stylesheet" href="@Url.Content("~/themes/mytheme/css/skel-noscript.css")" />
         <link rel="stylesheet" href="@Url.Content("~/themes/mytheme/css/style.css")" />
         <link rel="stylesheet" href="@Url.Content("~/themes/mytheme/css/style-desktop.css")" />
     </noscript>
 
-    /* Some useful shortcuts or settings
-    ***************************************************************/
+@{
+        /* Some useful shortcuts or settings
+        ***************************************************************/
 
-    Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
     
-    /* Inserting some ad hoc shapes
-    ***************************************************************/
+        Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
+    
+        /* Inserting some ad hoc shapes
+        ***************************************************************/
 
-    WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page    
-    WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
+        WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page    
+        WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
 }
 
 @if (Model.Header != null)
