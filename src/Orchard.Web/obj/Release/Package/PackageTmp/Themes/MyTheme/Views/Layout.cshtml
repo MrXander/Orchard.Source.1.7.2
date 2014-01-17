@@ -1,43 +1,50 @@
-﻿@functions {
-    // To support the layout classifaction below. Implementing as a razor function because we can, could otherwise be a Func<string[], string, string> in the code block following.
-    string CalcuClassify(string[] zoneNames, string classNamePrefix)
-    {
-        var zoneCounter = 0;
-        var zoneNumsFilled = string.Join("", zoneNames.Select(zoneName => { ++zoneCounter; return Model[zoneName] != null ? zoneCounter.ToString() : ""; }).ToArray());
-        return HasText(zoneNumsFilled) ? classNamePrefix + zoneNumsFilled : "";
-    }
-}
-@{
-    /* Global includes for the theme
+﻿@{
+/* Global includes for the theme
     ***************************************************************/
-    
-    SetMeta(name: "viewport", content: "width=1040");    
-    <link href='http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <!--[if lte IE 8]>Script.Include("html5shiv.js")<![endif]-->
+
+    SetMeta(name: "viewport", content: "width=1040");
+}
+<link href='http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  @using (Script.Head())
+        {            
+            <!-- Put this script tag to the <head> of your page -->
+            <script type="text/javascript" src="//vk.com/js/api/openapi.js?105"></script>           
+        }
+            <script type="text/javascript">
+                VK.init({ apiId: 4119259 });
+            </script> 
+
+<!--[if lte IE 8]>@{ Script.Include("html5shiv.js"); }<![endif]-->
+@{
     Script.Include("jquery.min.js").AtHead();
     Script.Include("jquery.dropotron.min.js").AtHead();
     Script.Include("config.js").AtHead();
     Script.Include("skel.min.js").AtHead();
     Script.Include("skel-panels.min.js").AtHead();
-    
+
     if (Request.Path.EndsWith("/first-gallery"))
     {
         using (Script.Head())
-        {            
+        {
             Script.Include("first-gallery.js").AtHead();
         }
     }
+}
+    
     <noscript>        
         <link rel="stylesheet" href="@Url.Content("~/themes/mytheme/css/skel-noscript.css")" />
         <link rel="stylesheet" href="@Url.Content("~/themes/mytheme/css/style.css")" />
         <link rel="stylesheet" href="@Url.Content("~/themes/mytheme/css/style-desktop.css")" />
     </noscript>
 
+@{
     /* Some useful shortcuts or settings
-    ***************************************************************/
+        ***************************************************************/
+
 
     Func<dynamic, dynamic> Zone = x => Display(x); // Zone as an alias for Display to help make it obvious when we're displaying zones
-    
+
     /* Inserting some ad hoc shapes
     ***************************************************************/
 
@@ -73,6 +80,12 @@
         @Zone(Model.BeforeMain)
     </div>
 }
+
+<!-- Put this div tag to the place, where Auth block will be -->
+<div id="vk_auth"></div>
+<script type="text/javascript">
+    VK.Widgets.Auth("vk_auth", {});
+</script>
 
 <div id="main-wrapper">
     <div id="main" class="container">
