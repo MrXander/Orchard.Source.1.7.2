@@ -58,3 +58,13 @@ System.IO.IOException: ??????? ?? ????? ???????? ?????? ? ????? "C:\D\tmp\My\Orc
 2014-01-20 18:00:05,682 [10] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
 2014-01-20 18:00:16,731 [14] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
 2014-01-20 18:00:18,365 [14] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 23:47:09,126 [8] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 23:47:11,145 [8] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 23:47:23,952 [9] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 23:47:25,244 [9] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 23:52:43,114 [34] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 23:52:43,599 [34] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 23:52:47,527 [23] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 23:52:48,435 [23] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 23:53:20,103 [34] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 23:53:20,425 [34] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
