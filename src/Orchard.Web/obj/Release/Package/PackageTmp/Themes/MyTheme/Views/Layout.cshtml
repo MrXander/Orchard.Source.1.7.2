@@ -48,8 +48,10 @@
     /* Inserting some ad hoc shapes
     ***************************************************************/
 
-    WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page    
-    WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
+    if (WorkContext.CurrentUser != null) {
+        WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page    
+        WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
+    }    
 }
 
 @if (Model.Header != null)
@@ -62,7 +64,7 @@
 
             @if (Model.Navigation != null)
             {
-                @Zone(Model.Navigation)
+                @Zone(Model.Navigation)                
             }
         </div>
     </div>
@@ -131,12 +133,13 @@
         <div id="footer" class="container">
             @Zone(Model.Footer)
         </div>
+    
+        <div id="copyright" class="container">
+            <ul class="links">
+                <li>© Untitled. All rights reserved</li>
+                <li>Demo images: <a href="http://regularjane.deviantart.com/">regularjane</a></li>
+                <li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
+            </ul>
+        </div>
     }
-    <div id="copyright" class="container">
-        <ul class="links">
-            <li>© Untitled. All rights reserved</li>
-            <li>Demo images: <a href="http://regularjane.deviantart.com/">regularjane</a></li>
-            <li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
-        </ul>
-    </div>
 </div>

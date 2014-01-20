@@ -15,8 +15,8 @@
                 VK.init({ apiId: 4119259 });
             </script> 
 
-<!--[if lte IE 8]>@{ Script.Include("html5shiv.js"); }<![endif]-->
-@{
+<!--[if lte IE 8]><script type="text/javascript" src="@Url.Content("~/themes/mytheme/scripts/html5shiv.js")"></script><![endif]-->
+@{    
     Script.Include("jquery.min.js").AtHead();
     Script.Include("jquery.dropotron.min.js").AtHead();
     Script.Include("config.js").AtHead();

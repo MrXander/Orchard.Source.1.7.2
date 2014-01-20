@@ -1,0 +1,60 @@
+2014-01-20 13:06:47,818 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 13:06:48,588 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 13:06:56,488 [8] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 13:06:57,822 [8] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 13:42:15,906 [23] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "imagepowertools_28a2f1dc98c7"
+2014-01-20 13:42:17,113 [8] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 13:42:19,907 [6] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 14:04:45,312 [23] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 14:04:45,882 [23] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 14:04:50,050 [9] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 14:04:51,158 [9] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 14:05:01,643 [19] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 14:05:02,359 [19] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 17:54:19,858 [11] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 17:54:21,564 [11] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 17:57:46,573 [27] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 17:57:47,099 [27] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 17:57:59,009 [10] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 17:58:00,695 [42] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 17:58:01,540 [10] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 17:58:01,592 [42] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 17:58:03,845 [42] Orchard.Environment.DefaultOrchardHost - A tenant could not be started: Default
+System.IO.IOException: ??????? ?? ????? ???????? ?????? ? ????? "C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\App_Data\Sites\Default\mappings.bin", ??? ??? ???? ???? ???????????? ?????? ?????????.
+   ? System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   ? System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   ? System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize)
+   ? System.IO.File.Create(String path)
+   ? Orchard.FileSystems.AppData.AppDataFolder.CreateFile(String path) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\FileSystems\AppData\AppDataFolder.cs:?????? 124
+   ? Orchard.Data.SessionConfigurationCache.StoreConfiguration(ConfigurationCache cache) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\SessionConfigurationCache.cs:?????? 76
+   ? Orchard.Data.SessionConfigurationCache.GetConfiguration(Func`1 builder) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\SessionConfigurationCache.cs:?????? 59
+   ? Orchard.Data.SessionFactoryHolder.BuildConfiguration() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\SessionFactoryHolder.cs:?????? 100
+   ? Orchard.Data.SessionFactoryHolder.GetConfiguration() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\SessionFactoryHolder.cs:?????? 78
+   ? Orchard.Data.SessionFactoryHolder.BuildSessionFactory() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\SessionFactoryHolder.cs:?????? 90
+   ? Orchard.Data.SessionFactoryHolder.GetSessionFactory() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\SessionFactoryHolder.cs:?????? 69
+   ? Orchard.Data.SessionLocator.EnsureSession() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\SessionLocator.cs:?????? 109
+   ? Orchard.Data.SessionLocator.Demand() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\SessionLocator.cs:?????? 40
+   ? Orchard.Data.SessionLocator.For(Type entityType) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\SessionLocator.cs:?????? 34
+   ? Orchard.Data.Repository`1.get_Session() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\Repository.cs:?????? 26
+   ? Orchard.Data.Repository`1.get_Table() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\Repository.cs:?????? 30
+   ? Orchard.Data.Repository`1.Fetch(Expression`1 predicate) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\Repository.cs:?????? 126
+   ? Orchard.Data.Repository`1.Get(Expression`1 predicate) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\Repository.cs:?????? 91
+   ? Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Get(Expression`1 predicate) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\Repository.cs:?????? 60
+   ? Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetDescriptorRecord() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:?????? 57
+   ? Orchard.Core.Settings.Descriptor.ShellDescriptorManager.GetShellDescriptor() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Core\Settings\Descriptor\ShellDescriptorManager.cs:?????? 30
+   ? Orchard.Environment.ShellBuilders.ShellContextFactory.CreateShellContext(ShellSettings settings) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\ShellBuilders\ShellContextFactory.cs:?????? 66
+   ? Orchard.Environment.DefaultOrchardHost.CreateShellContext(ShellSettings settings) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\DefaultOrchardHost.cs:?????? 177
+   ? Orchard.Environment.DefaultOrchardHost.CreateAndActivateShells() ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\DefaultOrchardHost.cs:?????? 133
+2014-01-20 17:58:04,106 [42] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 17:58:25,375 [18] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 17:58:26,077 [18] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 17:58:38,518 [40] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 17:58:40,290 [40] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 17:59:07,314 [31] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 17:59:07,788 [31] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 17:59:14,839 [38] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 17:59:15,576 [38] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 18:00:04,031 [10] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 18:00:05,682 [10] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-20 18:00:16,731 [14] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-20 18:00:18,365 [14] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
