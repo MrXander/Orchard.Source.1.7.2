@@ -156,6 +156,7 @@
     <Content Include="Config\Host.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Properties\PublishProfiles\FTP.pubxml" />
     <None Include="Properties\PublishProfiles\Release.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
