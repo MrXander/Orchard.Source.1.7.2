@@ -37,7 +37,7 @@ else
     
     using (Html.BeginFormAntiForgeryPost(Url.Action("Create", "Comment", new { Area = "Orchard.Comments", ReturnUrl = Context.Request.ToUrlString() }), FormMethod.Post, new { @class = "comment-form" }))
     {
-        <script type="text/javascript">
+@*<script type="text/javascript">
             VK.init({ apiId: 4119259 });
         </script>
     
@@ -45,8 +45,21 @@ else
         <div id="vk_auth"></div>
         <script type="text/javascript">
             VK.Widgets.Auth("vk_auth", {});
-        </script>        
+        </script>*@
         
+    <div class="6u">
+        <section>
+            <p>Войти с помощью:</p>
+            <div class="row">                
+                <ul class="icons 6u">
+                    <li class="fa fa-vk"><a href="https://oauth.vk.com/authorize?client_id=4119259&display=popup&redirect_uri=@Context.Request.ToRootUrlString()/QuickLogOn/VKAuth&response_type=token&scope=3" onclick="return !window.open(this.href, 'Вконтакте', 'width=500,height=500')">Вконтакте</a></li>                                        
+                    <li class="fa fa-facebook"><a href="#">facebook</a></li>
+                    <li class="fa fa-google-plus"><a href="#">google</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    
         if (TempData.ContainsKey("Comments.InvalidCommentEditorShape"))
         {
     @Display(TempData["Comments.InvalidCommentEditorShape"]);
