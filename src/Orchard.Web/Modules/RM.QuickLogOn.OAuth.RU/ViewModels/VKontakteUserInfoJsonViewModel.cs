@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
+﻿using System.Runtime.Serialization;
 
 namespace RM.QuickLogOn.OAuth.RU.ViewModels
 {
@@ -19,6 +15,9 @@ namespace RM.QuickLogOn.OAuth.RU.ViewModels
             
             [DataMember]
             public string last_name { get; set; }
+            
+            [DataMember]
+            public string photo_max { get; set; }
         }
 
         [DataMember]

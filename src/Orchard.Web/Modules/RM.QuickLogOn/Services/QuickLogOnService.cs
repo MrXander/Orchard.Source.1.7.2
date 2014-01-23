@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using Orchard;
 using Orchard.ContentManagement;
 using Orchard.Localization;
@@ -9,7 +8,6 @@ using Orchard.Logging;
 using Orchard.Security;
 using Orchard.Users.Models;
 using RM.QuickLogOn.Providers;
-using System.Web.Mvc;
 
 namespace RM.QuickLogOn.Services
 {
@@ -55,9 +53,6 @@ namespace RM.QuickLogOn.Services
 
             var lowerEmail = request.Email == null ? "" : request.Email.ToLowerInvariant();
 
-            //var user = _orchardServices.ContentManager.Query<UserPart, UserPartRecord>().Where(u => u.NormalizedUserName == lowerName).List().FirstOrDefault();
-
-            //if (user == null)
             var user = _orchardServices.ContentManager.Query<UserPart, UserPartRecord>().Where(u => u.Email == lowerEmail).List().FirstOrDefault();
 
             if (user == null)

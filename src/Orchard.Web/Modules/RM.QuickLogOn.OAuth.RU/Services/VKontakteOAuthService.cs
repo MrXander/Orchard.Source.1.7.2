@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Runtime.Serialization.Json;
-using System.Text;
 using System.Web.Mvc;
 using Orchard;
 using Orchard.ContentManagement;
@@ -12,7 +9,6 @@ using Orchard.Localization;
 using Orchard.Logging;
 using Orchard.Security;
 using System.Net;
-using RM.QuickLogOn.OAuth.RU.Services;
 using RM.QuickLogOn.Providers;
 using RM.QuickLogOn.Services;
 using RM.QuickLogOn.OAuth.RU.Models;
@@ -30,7 +26,7 @@ namespace RM.QuickLogOn.OAuth.RU.Services
     public class VKontakteOAuthService : IVKontakteOAuthService
     {
         public const string TokenRequestUrl = "https://oauth.vk.com/access_token";
-        public const string UserInfoRequestUrl = "https://api.vk.com/method/users.get?uids={0}&fields=uid,first_name,last_name&access_token={1}";
+        public const string UserInfoRequestUrl = "https://api.vk.com/method/users.get?uids={0}&fields=uid,first_name,last_name,photo_max";
 
         private readonly IQuickLogOnService _quickLogOnService;
         private readonly IEncryptionService _oauthHelper;
@@ -108,6 +104,29 @@ namespace RM.QuickLogOn.OAuth.RU.Services
             return null;
         }
 
+        private VKontakteUserInfoJsonViewModel.UserInfo GetUserInfo(string token, string userId)
+        {
+            try
+            {
+                var wr = WebRequest.Create(string.Format(UserInfoRequestUrl, userId));
+                wr.Method = "POST";
+                wr.Proxy = OAuthHelper.GetProxy();
+                var wres = wr.GetResponse();
+                using (var stream = wres.GetResponseStream())
+                {
+                    var jsonViewModel = OAuthHelper.FromJson<VKontakteUserInfoJsonViewModel>(stream);
+                    return jsonViewModel != null 
+                        ? jsonViewModel.response.FirstOrDefault() 
+                        : null;                    
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Error(ex, ex.Message);
+            }
+            return null;
+        }
+
         public QuickLogOnResponse Auth(WorkContext wc, string code, string error, string returnUrl)
         {
             if (string.IsNullOrEmpty(code) && string.IsNullOrEmpty(error))
@@ -119,19 +138,19 @@ namespace RM.QuickLogOn.OAuth.RU.Services
                 var token = GetAccessToken(wc, code, returnUrl);
                 if (token != null)
                 {
-                    var email = GetEmailAddress(token.access_token, token.user_id);
-                    if (!string.IsNullOrEmpty(email))
+                    var userInfo = GetUserInfo(token.access_token, token.user_id);
+                    if (userInfo != null)
                     {
                         returnUrl = HttpUtility.UrlDecode(returnUrl);
                         return _quickLogOnService.LogOn(new QuickLogOnRequest
                         {
-                            Email = email,
-                            Login = email,
+                            Email = userInfo.uid,
+                            Login = string.Format("{0} {1}", userInfo.first_name, userInfo.last_name),
                             RememberMe = false,
                             ReturnUrl = returnUrl
                         });
                     }
-                    error = T("invalid email").ToString();
+                    error = T("invalid email").ToString();                    
                 }
                 else
                 {
