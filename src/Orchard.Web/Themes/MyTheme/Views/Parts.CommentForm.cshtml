@@ -47,12 +47,24 @@ else
             VK.Widgets.Auth("vk_auth", {});
         </script>*@
         
+        <script type="text/javascript">
+            function openAuthWindow(url) {
+                var w = window.open(url, "VK", "width=500,height=500");
+                w.load = function() {
+                    if (w.location.href.indexOf("QuickLogOn/VKAuth") != -1) {
+                        w.close();
+                        window.reload();
+                    }
+                };                
+            }
+        </script>
+
     <div class="6u">
         <section>
             <p>Войти с помощью:</p>
             <div class="row">                
                 <ul class="icons 6u">
-                    <li class="fa fa-vk"><a href="https://oauth.vk.com/authorize?client_id=4119259&display=popup&redirect_uri=@Context.Request.ToRootUrlString()/QuickLogOn/VKAuth&response_type=token&scope=3" onclick="return !window.open(this.href, 'Вконтакте', 'width=500,height=500')">Вконтакте</a></li>                                        
+                    <li class="fa fa-vk"><a href="https://oauth.vk.com/authorize?client_id=4119259&display=popup&redirect_uri=@Context.Request.ToRootUrlString()/QuickLogOn/VKAuth&response_type=token&scope=3" onclick="openAuthWindow(this.href);">Вконтакте</a></li>                                        
                     <li class="fa fa-facebook"><a href="#">facebook</a></li>
                     <li class="fa fa-google-plus"><a href="#">google</a></li>
                 </ul>

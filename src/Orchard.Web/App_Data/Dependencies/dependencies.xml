@@ -942,6 +942,11 @@
     <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
       <Reference>
+        <Name>Orchard.Users</Name>
+        <LoaderName>PrecompiledExtensionLoader</LoaderName>
+        <VirtualPath>~/Modules/Orchard.Users/bin/Orchard.Users.dll</VirtualPath>
+      </Reference>
+      <Reference>
         <Name>RM.QuickLogOn</Name>
         <LoaderName>PrecompiledExtensionLoader</LoaderName>
         <VirtualPath>~/Modules/RM.QuickLogOn/bin/RM.QuickLogOn.dll</VirtualPath>

@@ -38,8 +38,8 @@ namespace RM.QuickLogOn.OAuth.RU.Controllers
             {
                 _services.Notifier.Add(NotifyType.Error, response.Error);
             }
-            
-            return this.RedirectLocal(response.ReturnUrl);
+                        
+            return View();
         }
     }
 }
