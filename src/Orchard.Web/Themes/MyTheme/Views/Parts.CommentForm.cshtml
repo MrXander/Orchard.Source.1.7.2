@@ -18,17 +18,39 @@
     }
 }
 else if (settings.MustBeAuthenticated && WorkContext.CurrentUser == null)
-{
-    <div id="comments">
-        <p class="comment-disabled">@T("You must be authenticated in order to add a comment.")</p>
+{      
+    <script type="text/javascript">
+        function openAuthWindow(url) {
+            var w = window.open(url, "VK", "width=500,height=500");
+            w.load = function () {
+                if (w.location.href.indexOf("QuickLogOn/VKAuth") != -1) {
+                    w.close();
+                    window.reload();
+                }
+            };
+        }
+    </script>
+    <div class="row">
+        <div class="6u">
+            <section>
+                <p>Чтобы оставить комментарий войдите с помощью:</p>
+                <div class="row">
+                    <ul class="icons 6u">
+                        <li class="fa fa-vk"><a href="https://oauth.vk.com/authorize?client_id=4119259&display=popup&redirect_uri=@Context.Request.ToRootUrlString()/QuickLogOn/VKAuth&response_type=token&scope=3" onclick="openAuthWindow(this.href);">Вконтакте</a></li>
+                        <li class="fa fa-facebook"><a href="#">facebook</a></li>
+                        <li class="fa fa-google-plus"><a href="#">google</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </div>
 }
 else if (WorkContext.CurrentUser == null && !AuthorizedFor(Permissions.AddComment))
 {
     <h2 id="add-comment">@T("Add a Comment")</h2>
     <p class="info message">@T("You must {0} to comment.", Html.ActionLink(T("log on").ToString(), "LogOn",
-                            new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = string.Format("{0}#addacomment", Context.Request.RawUrl) }))
-    </p>
+                                new { Controller = "Account", Area = "Orchard.Users", ReturnUrl = string.Format("{0}#addacomment", Context.Request.RawUrl) }))
+    </p>  
 }
 else
 {    
@@ -37,41 +59,6 @@ else
     
     using (Html.BeginFormAntiForgeryPost(Url.Action("Create", "Comment", new { Area = "Orchard.Comments", ReturnUrl = Context.Request.ToUrlString() }), FormMethod.Post, new { @class = "comment-form" }))
     {
-@*<script type="text/javascript">
-            VK.init({ apiId: 4119259 });
-        </script>
-    
-        <!-- Put this div tag to the place, where Auth block will be -->
-        <div id="vk_auth"></div>
-        <script type="text/javascript">
-            VK.Widgets.Auth("vk_auth", {});
-        </script>*@
-        
-        <script type="text/javascript">
-            function openAuthWindow(url) {
-                var w = window.open(url, "VK", "width=500,height=500");
-                w.load = function() {
-                    if (w.location.href.indexOf("QuickLogOn/VKAuth") != -1) {
-                        w.close();
-                        window.reload();
-                    }
-                };                
-            }
-        </script>
-
-    <div class="6u">
-        <section>
-            <p>Войти с помощью:</p>
-            <div class="row">                
-                <ul class="icons 6u">
-                    <li class="fa fa-vk"><a href="https://oauth.vk.com/authorize?client_id=4119259&display=popup&redirect_uri=@Context.Request.ToRootUrlString()/QuickLogOn/VKAuth&response_type=token&scope=3" onclick="openAuthWindow(this.href);">Вконтакте</a></li>                                        
-                    <li class="fa fa-facebook"><a href="#">facebook</a></li>
-                    <li class="fa fa-google-plus"><a href="#">google</a></li>
-                </ul>
-            </div>
-        </section>
-    </div>
-    
         if (TempData.ContainsKey("Comments.InvalidCommentEditorShape"))
         {
     @Display(TempData["Comments.InvalidCommentEditorShape"]);

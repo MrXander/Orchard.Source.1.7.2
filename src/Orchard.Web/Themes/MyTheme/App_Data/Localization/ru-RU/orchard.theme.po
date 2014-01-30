@@ -1,0 +1,213 @@
+# Orchard resource strings - ru-RU
+# Copyright (c) 2010 Outercurve Foundation
+# All rights reserved
+# This file is distributed under the BSD license
+
+#: ~/Themes/TheThemeMachine/Views/Pager.cshtml
+#| msgid "Newer"
+msgctxt "~/Themes/TheThemeMachine/Views/Pager.cshtml"
+msgid "Newer"
+msgstr "Новее"
+
+#: ~/Themes/TheThemeMachine/Views/Pager.cshtml
+#| msgid "Older"
+msgctxt "~/Themes/TheThemeMachine/Views/Pager.cshtml"
+msgid "Older"
+msgstr "Старше"
+
+#: ~/Themes/TheThemeMachine/Theme.txt
+#| msgid "Author"
+msgctxt "~/Themes/TheThemeMachine/Theme.txt"
+msgid "jowall, mibach, loudej, heskew"
+msgstr "jowall, mibach, loudej, heskew"
+
+#: ~/Themes/TheThemeMachine/Theme.txt
+#| msgid "Description"
+msgctxt "~/Themes/TheThemeMachine/Theme.txt"
+msgid "Orchard Theme Machine is a flexible multi-zone theme that provides a solid foundation to build your site. It features 20 collapsible widget zones and is flexible enough to cover a wide range of layouts."
+msgstr "The Theme Machine — это гибкая многозонная тема предоставляющая твердую основу для создания вашего сайта. Она обладает 20-ю свертываемыми зонами и это достаточно гибко покрывает широкий диапазон раскладок."
+
+#: ~/Themes/TheThemeMachine/Theme.txt
+#| msgid "Tags"
+msgctxt "~/Themes/TheThemeMachine/Theme.txt"
+msgid "Awesome"
+msgstr "Внушительная"
+
+#: ~/Themes/TheThemeMachine/Theme.txt
+#| msgid "Website"
+msgctxt "~/Themes/TheThemeMachine/Theme.txt"
+msgid "http://orchardproject.net"
+msgstr "http://orchardproject.net"
+
+#: ~/Themes/TheThemeMachine/Views/BadgeOfHonor.cshtml
+#| msgid "&#169; The Theme Machine 2010."
+msgctxt "~/Themes/TheThemeMachine/Views/BadgeOfHonor.cshtml"
+msgid "&#169; The Theme Machine 2010."
+msgstr "&#169; The Theme Machine 2010."
+
+#: ~/Themes/TheThemeMachine/Theme.txt
+#| msgid "Name"
+msgctxt "~/Themes/TheThemeMachine/Theme.txt"
+msgid "The Theme Machine"
+msgstr "The Theme Machine"
+
+#: ~/Themes/TheThemeMachine/Views/Orchard.Tags/Home/Search.cshtml
+#| msgid "Tags"
+msgctxt "~/Themes/TheThemeMachine/Views/Orchard.Tags/Home/Search.cshtml"
+msgid "Tags"
+msgstr "Метка"
+
+#: ~/Themes/TheThemeMachine/Views/Orchard.Tags/Home/Search.cshtml
+#| msgid "Contents tagged with {0}"
+msgctxt "~/Themes/TheThemeMachine/Views/Orchard.Tags/Home/Search.cshtml"
+msgid "Contents tagged with {0}"
+msgstr "Контент помечен меткой {0}"
+
+#: ~/Themes/TheThemeMachine/Views/Orchard.Tags/Home/Search.cshtml
+#| msgid "Contents tagged with <span>{0}</span>"
+msgctxt "~/Themes/TheThemeMachine/Views/Orchard.Tags/Home/Search.cshtml"
+msgid "Contents tagged with <span>{0}</span>"
+msgstr "Контент помечен меткой <span>{0}</span>"
+
+#: ~/Themes/TheThemeMachine/Views/BadgeOfHonor.cshtml
+#| msgid "Powered by <a href=\"{0}\" target=\"_blank\">Orchard</a>"
+msgctxt "~/Themes/TheThemeMachine/Views/BadgeOfHonor.cshtml"
+msgid "Powered by <a href=\"{0}\" target=\"_blank\">Orchard</a>"
+msgstr "Сделано <a href=\"{0}\" target=\"_blank\">Orchard</a>"
+
+#: ~/Themes/TheThemeMachine/Views/User.cshtml
+#| msgid "Welcome, <strong>{0}</strong>!"
+msgctxt "~/Themes/TheThemeMachine/Views/User.cshtml"
+msgid "Welcome, <strong>{0}</strong>!"
+msgstr "Добро пожаловать, <strong>{0}</strong>!"
+
+#: ~/Themes/TheThemeMachine/Views/User.cshtml
+#| msgid "Log Off"
+msgctxt "~/Themes/TheThemeMachine/Views/User.cshtml"
+msgid "Log Off"
+msgstr "Выйти"
+
+#: ~/Themes/TheThemeMachine/Views/User.cshtml
+#| msgid "Login"
+msgctxt "~/Themes/TheThemeMachine/Views/User.cshtml"
+msgid "Login"
+msgstr "Вход"
+
+
+##################
+#### Comments ####
+##################
+#: ~/Themes/MyTheme/Views/Parts.ListOfComments.cshtml
+#| msgid "No Comments"
+msgctxt "~/Themes/MyTheme/Views/Parts.ListOfComments.cshtml"
+msgid "No Comments"
+msgstr "Нет комментариев"
+
+#: ~/Themes/MyTheme/Views/Parts.ListOfComments.cshtml
+#| msgid "1 Comment"
+msgctxt "~/Themes/MyTheme/Views/Parts.ListOfComments.cshtml"
+msgid "1 Comment"
+msgstr "1 комментарий"
+
+#: ~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml
+#| msgid "Add a Comment"
+msgctxt ~/Themes/MyTheme/Views//EditorTemplates/Parts.Comment.cshtml"
+msgid "Add a Comment"
+msgstr "Добавить коментарий"
+
+#: ~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml
+#| msgid "Name"
+msgctxt "~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml"
+msgid "Name"
+msgstr "Имя"
+
+#: ~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml
+#| msgid "Email"
+msgctxt "~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml"
+msgid "Email"
+msgstr "Адрес электронной почты"
+
+#: ~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml
+#| msgid "Url"
+msgctxt "~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml"
+msgid "Url"
+msgstr "Адрес url"
+
+#: ~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml
+#| msgid "Hi, {0}!"
+msgctxt "~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml"
+msgid "Hi, {0}!"
+msgstr "Добро пожаловать, {0}!"
+
+#: ~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml
+#| msgid "Comment"
+msgctxt "~/Themes/MyTheme/Views/EditorTemplates/Parts.Comment.cshtml"
+msgid "Comment"
+msgstr "Текст"
+
+#: ~/Themes/MyTheme/Views/EditorTemplates/Parts.Comments.Comments.cshtml
+#| msgid "Show comments"
+msgctxt "~/Themes/MyTheme/Views/EditorTemplates/Parts.Comments.Comments.cshtml"
+msgid "Show comments"
+msgstr "Показать комментарии"
+
+#: ~/Themes/MyTheme/Views/CommentReplyButton.cshtml
+#| msgid "Reply"
+msgctxt "~/Themes/MyTheme/Views/CommentReplyButton.cshtml"
+msgid "Reply"
+msgstr "Ответить"
+
+#: ~/Themes/MyTheme/Views/Parts.CommentForm.cshtml
+#| msgid "Submit Comment"
+msgctxt "~/Themes/MyTheme/Views/Parts.CommentForm.cshtml"
+msgid "Submit Comment"
+msgstr "Ответить"
+
+#| msgid "'on' MMM d yyyy 'at' h:mm tt"
+msgid "'on' MMM d yyyy 'at' h:mm tt"
+msgstr "dd MMMM yyyy 'в' hh:mm"
+
+#| msgid "MMM d yyyy h:mm tt"
+msgid "MMM d yyyy h:mm tt"
+msgstr "d MMMM yyyy hh:MM"
+
+#| msgid "1 day ago"
+msgid "1 day ago"
+msgstr "1 день назад"
+
+#| msgid "{0} days ago"
+msgid "{0} days ago"
+msgstr "{0} дней назад"
+
+#| msgid "1 hour ago"
+msgid "1 hour ago"
+msgstr "час назад"
+
+#| msgid "{0} hours ago"
+msgid "{0} hours ago"
+msgstr "{0} часов назад"
+
+#| msgid "1 minute ago"
+msgid "1 minute ago"
+msgstr "минуту назад"
+
+#| msgid "{0} minutes ago"
+msgid "{0} minutes ago"
+msgstr "{0} минут назад"
+
+#| msgid "1 day ago"
+msgid "1 day ago"
+msgstr "1 день назад"
+
+#| msgid "{0} days ago"
+msgid "{0} days ago"
+msgstr "{0} дней назад"
+
+#| msgid "a moment ago"
+msgid "a moment ago"
+msgstr "только что"
+
+#| msgid "{0} seconds ago"
+msgid "{0} seconds ago"
+msgstr "{0} секунд назад"
+

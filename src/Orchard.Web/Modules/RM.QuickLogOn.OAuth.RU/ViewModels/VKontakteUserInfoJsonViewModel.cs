@@ -17,7 +17,7 @@ namespace RM.QuickLogOn.OAuth.RU.ViewModels
             public string last_name { get; set; }
             
             [DataMember]
-            public string photo_max { get; set; }
+            public string photo_max_orig { get; set; }
         }
 
         [DataMember]

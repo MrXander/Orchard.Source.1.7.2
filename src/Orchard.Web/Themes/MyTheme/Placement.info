@@ -1,14 +1,22 @@
 <Placement>
   <!-- Customize where the shapes are rendered -->
-  <Place Parts_Title="-"/>
-  <Place Parts_Common_Metadata="-"/>
+
+  
+  
+  <Match ContentType="Blog">
+    <Place Parts_Title="-"/>
+    <Place Parts_Common_Metadata="-"/>
+  </Match>
 
   <Match ContentType="BlogPost">
-    <Match DisplayType="Summary">
+    <Match DisplayType="Summary">      
       <Place Fields_Common_Text="-"/>
+      <Place Parts_Tags_ShowTags="Content:5"/>
     </Match>
     <Match DisplayType="Detail">
       <Place Fields_Common_Text="-"/>
+      <Place Parts_Common_Metadata="Content:1"/>
+      <Place Parts_Tags_ShowTags="Content:5"/>
     </Match>
   </Match>
 

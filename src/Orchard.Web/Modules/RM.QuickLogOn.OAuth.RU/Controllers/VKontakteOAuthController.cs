@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using Orchard;
-using Orchard.ContentManagement;
-using Orchard.Mvc.Extensions;
 using Orchard.Environment.Extensions;
 using Orchard.Localization;
 using Orchard.Themes;
@@ -39,7 +33,7 @@ namespace RM.QuickLogOn.OAuth.RU.Controllers
                 _services.Notifier.Add(NotifyType.Error, response.Error);
             }
                         
-            return View();
+            return new EmptyResult();
         }
     }
 }

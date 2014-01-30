@@ -1,0 +1,57 @@
+2014-01-27 15:52:59,941 [7] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 15:53:01,274 [7] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 15:53:10,630 [8] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 15:53:11,715 [8] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 16:54:15,754 [6] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 16:54:20,266 [6] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 16:54:30,424 [6] RM.QuickLogOn.OAuth.RU.Services.VKontakteOAuthService - ????????? ?????? ????????? ??????: (401) ???????????????????.
+System.Net.WebException: ????????? ?????? ????????? ??????: (401) ???????????????????.
+   ? System.Net.HttpWebRequest.GetResponse()
+   ? RM.QuickLogOn.OAuth.RU.Services.VKontakteOAuthService.GetAccessToken(WorkContext wc, String code, String returnUrl) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\RM.QuickLogOn.OAuth.RU\Services\VKontakteOAuthService.cs:?????? 70
+2014-01-27 16:55:00,640 [6] RM.QuickLogOn.OAuth.RU.Services.VKontakteOAuthService - ???????? ?? ????? ???? ??????????????.
+??? ?????????: source
+System.ArgumentNullException: ???????? ?? ????? ???? ??????????????.
+??? ?????????: source
+   ? System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   ? RM.QuickLogOn.OAuth.RU.Services.VKontakteOAuthService.GetUserInfo(String userId) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\RM.QuickLogOn.OAuth.RU\Services\VKontakteOAuthService.cs:?????? 118
+2014-01-27 16:57:42,900 [18] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 16:57:44,662 [18] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:05:07,963 [11] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "imagepowertools_28a2f1dc98c7"
+2014-01-27 17:05:09,368 [14] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:41:49,499 [61] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:41:49,986 [61] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:41:56,804 [8] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:41:57,539 [8] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:42:14,953 [55] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "imagepowertools_28a2f1dc98c7"
+2014-01-27 17:42:16,766 [52] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:42:57,504 [48] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:43:55,463 [43] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:43:57,859 [15] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:47:41,036 [27] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:47:41,540 [27] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:47:55,762 [16] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:47:57,342 [16] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:48:10,216 [16] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:48:11,414 [59] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:48:12,005 [59] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:48:12,294 [16] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:50:30,721 [15] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:50:32,140 [15] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:50:36,264 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:50:37,309 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:50:46,696 [60] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:50:47,311 [60] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:53:36,377 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:53:39,264 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:54:53,365 [12] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:54:56,846 [12] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:55:45,411 [8] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:55:48,248 [8] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:57:22,339 [12] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:57:26,326 [12] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 17:59:11,120 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 17:59:11,663 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 18:08:46,561 [32] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-01-27 18:08:47,117 [32] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-01-27 18:15:52,633 [27] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "imagepowertools_28a2f1dc98c7"
+2014-01-27 18:15:53,742 [18] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!

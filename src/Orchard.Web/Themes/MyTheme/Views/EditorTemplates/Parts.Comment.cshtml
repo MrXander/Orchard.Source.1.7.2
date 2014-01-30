@@ -25,6 +25,13 @@ else
     @Html.Hidden("Email", WorkContext.CurrentUser.Email ?? "")
 }
 
+@if (WorkContext.CurrentUser != null) {
+    <span>
+        @if (WorkContext.CurrentUser != null) {
+            @T("Hi, {0}!", Convert.ToString(Html.ItemDisplayText(WorkContext.CurrentUser)))
+        }
+    </span>
+}
 <div class="row half">
     <div class="12u">
         @*@Html.LabelFor(m => m.CommentText, T("Comment"))*@

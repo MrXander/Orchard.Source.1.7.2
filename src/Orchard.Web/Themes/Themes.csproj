@@ -325,6 +325,27 @@
   <ItemGroup>
     <Content Include="MyTheme\Views\Parts.ListOfComments.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\User.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\CommentMetadata.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\CommentReplyButton.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\App_Data\Localization\ru-RU\orchard.theme.po" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Title-BlogPost.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Common.Metadata-BlogPost.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Parts.Tags.ShowTags-BlogPost.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

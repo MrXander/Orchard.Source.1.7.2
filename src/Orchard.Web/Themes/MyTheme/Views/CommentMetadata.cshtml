@@ -1,0 +1,6 @@
+﻿@using Orchard.Comments.Models
+@{
+    CommentPart comment = Model.ContentPart;
+}
+
+<time datetime="@comment.CommentDateUtc.GetValueOrDefault().ToString("dd.mm.yyyy HH:mm")">@Display.DateTimeRelative(dateTimeUtc: comment.CommentDateUtc.GetValueOrDefault())</time>

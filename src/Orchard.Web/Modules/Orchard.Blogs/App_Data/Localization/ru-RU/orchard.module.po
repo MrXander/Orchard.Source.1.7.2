@@ -1,0 +1,83 @@
+# Orchard resource strings - ru-RU
+# Copyright (c) 2010 Outercurve Foundation
+# All rights reserved
+# This file is distributed under the BSD license
+
+#: ~/Modules/Orchard.Blogs/Views/Parts/Blogs.Blog.BlogPostCount.cshtml
+#| msgid "1 post"
+msgctxt "~/Modules/Orchard.Blogs/Views/Parts/Blogs.Blog.BlogPostCount.cshtml"
+msgid "1 post"
+msgstr "1 запись"
+
+#: ~/Modules/Orchard.Blogs/Views/Parts/Blogs.Blog.BlogPostCount.cshtml
+#| msgid "{0} posts"
+msgctxt "~/Modules/Orchard.Blogs/Views/Parts/Blogs.Blog.BlogPostCount.cshtml"
+msgid "{0} posts"
+msgstr "{0} записей"
+
+#: Orchard.Blogs.Commands.BlogCommands
+#| msgid "Loading feed..."
+msgctxt "Orchard.Blogs.Commands.BlogCommands"
+msgid "Loading feed..."
+msgstr "Загрузка ленты..."
+
+#: ~/Modules/Orchard.Blogs/Views/Parts.Blogs.BlogArchives.cshtml
+#| msgid "None found"
+msgctxt "~/Modules/Orchard.Blogs/Views/Parts.Blogs.BlogArchives.cshtml"
+msgid "None found"
+msgstr "Ничего не найдено"
+
+#: ~/Modules/Orchard.Blogs/Views/Parts.Blogs.BlogPost.List.cshtml
+#| msgid "There are no posts for this blog."
+msgctxt "~/Modules/Orchard.Blogs/Views/Parts.Blogs.BlogPost.List.cshtml"
+msgid "There are no posts for this blog."
+msgstr "В этом блоге нет записей."
+
+#: ~/Modules/Orchard.Blogs/Views/Parts.Blogs.BlogPost.ListAdmin.cshtml
+#| msgid "There are no posts for this blog."
+msgctxt "~/Modules/Orchard.Blogs/Views/Parts.Blogs.BlogPost.ListAdmin.cshtml"
+msgid "There are no posts for this blog."
+msgstr "Нет записей в этом блоге."
+
+#: ~/Modules/Orchard.Blogs/Views/Blog/List.cshtml
+#| msgid "No blogs found."
+msgctxt "~/Modules/Orchard.Blogs/Views/Blog/List.cshtml"
+msgid "No blogs found."
+msgstr "Блоги не найдены."
+
+#: ~/Modules/Orchard.Blogs/Views/BlogPost/ListByArchive.cshtml
+#| msgid "Archives"
+msgctxt "~/Modules/Orchard.Blogs/Views/BlogPost/ListByArchive.cshtml"
+msgid "Archives"
+msgstr "Архивы"
+
+#: ~/Modules/Orchard.Blogs/Views/EditorTemplates/Parts.Blogs.BlogArchives.cshtml
+#| msgid "For Blog"
+msgctxt "~/Modules/Orchard.Blogs/Views/EditorTemplates/Parts.Blogs.BlogArchives.cshtml"
+msgid "For Blog"
+msgstr "Для блога"
+
+#: ~/Modules/Orchard.Blogs/Views/EditorTemplates/Parts.Blogs.RecentBlogPosts.cshtml
+#| msgid "For Blog"
+msgctxt "~/Modules/Orchard.Blogs/Views/EditorTemplates/Parts.Blogs.RecentBlogPosts.cshtml"
+msgid "For Blog"
+msgstr "Для блога"
+
+#: ~/Modules/Orchard.Blogs/Views/EditorTemplates/Parts.Blogs.RecentBlogPosts.cshtml
+#| msgid "Count"
+msgctxt "~/Modules/Orchard.Blogs/Views/EditorTemplates/Parts.Blogs.RecentBlogPosts.cshtml"
+msgid "Count"
+msgstr "Количество"
+
+#: ~/Modules/Orchard.Blogs/Views/Parts.Blogs.Blog.BlogPostCount.cshtml
+#| msgid "1 post"
+msgctxt "~/Modules/Orchard.Blogs/Views/Parts.Blogs.Blog.BlogPostCount.cshtml"
+msgid "1 post"
+msgstr "1 запись"
+
+#: ~/Modules/Orchard.Blogs/Views/Parts.Blogs.Blog.BlogPostCount.cshtml
+#| msgid "{0} posts"
+msgctxt "~/Modules/Orchard.Blogs/Views/Parts.Blogs.Blog.BlogPostCount.cshtml"
+msgid "{0} posts"
+msgstr "{0} записей"
+

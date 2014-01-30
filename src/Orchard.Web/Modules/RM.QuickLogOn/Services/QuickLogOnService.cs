@@ -57,7 +57,7 @@ namespace RM.QuickLogOn.Services
 
             if (user == null)
             {
-                user = _membershipService.CreateUser(new CreateUserParams(lowerEmail, Guid.NewGuid().ToString(), lowerEmail, null, null, true)) as UserPart;
+                user = _membershipService.CreateUser(new CreateUserParams(request.Login, Guid.NewGuid().ToString(), lowerEmail, null, null, true)) as UserPart;
                 if (user == null)
                 {
                     return new QuickLogOnResponse { User = null, Error = T("User can not be created to assign to Quick LogOn credentials")};

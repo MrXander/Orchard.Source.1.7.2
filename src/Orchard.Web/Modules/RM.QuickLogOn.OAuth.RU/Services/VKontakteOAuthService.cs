@@ -26,7 +26,7 @@ namespace RM.QuickLogOn.OAuth.RU.Services
     public class VKontakteOAuthService : IVKontakteOAuthService
     {
         public const string TokenRequestUrl = "https://oauth.vk.com/access_token";
-        public const string UserInfoRequestUrl = "https://api.vk.com/method/users.get?uids={0}&fields=uid,first_name,last_name,photo_max";
+        public const string UserInfoRequestUrl = "https://api.vk.com/method/users.get?uids={0}&fields=uid,first_name,last_name,photo_max_orig";
 
         private readonly IQuickLogOnService _quickLogOnService;
         private readonly IEncryptionService _oauthHelper;
@@ -104,17 +104,19 @@ namespace RM.QuickLogOn.OAuth.RU.Services
             return null;
         }
 
-        private VKontakteUserInfoJsonViewModel.UserInfo GetUserInfo(string token, string userId)
+        private VKontakteUserInfoJsonViewModel.UserInfo GetUserInfo(string userId)
         {
             try
             {
                 var wr = WebRequest.Create(string.Format(UserInfoRequestUrl, userId));
-                wr.Method = "POST";
+                wr.Method = "GET";
                 wr.Proxy = OAuthHelper.GetProxy();
                 var wres = wr.GetResponse();
                 using (var stream = wres.GetResponseStream())
                 {
                     var jsonViewModel = OAuthHelper.FromJson<VKontakteUserInfoJsonViewModel>(stream);
+                    Logger.Information(jsonViewModel.response.FirstOrDefault().first_name);
+                    Logger.Information(jsonViewModel.response.FirstOrDefault().last_name);
                     return jsonViewModel != null 
                         ? jsonViewModel.response.FirstOrDefault() 
                         : null;                    
@@ -138,7 +140,7 @@ namespace RM.QuickLogOn.OAuth.RU.Services
                 var token = GetAccessToken(wc, code, returnUrl);
                 if (token != null)
                 {
-                    var userInfo = GetUserInfo(token.access_token, token.user_id);
+                    var userInfo = GetUserInfo(token.user_id);
                     if (userInfo != null)
                     {
                         returnUrl = HttpUtility.UrlDecode(returnUrl);
