@@ -1,7 +1,10 @@
 <Placement>
   <!-- Customize where the shapes are rendered -->
 
-  
+  <Match Path="/">
+    <Place Parts_Title="-"/>
+    <Place Parts_Common_Metadata="-"/>
+  </Match>
   
   <Match ContentType="Blog">
     <Place Parts_Title="-"/>
