@@ -1,7 +1,7 @@
 ﻿@using Orchard.ContentManagement
 @using Orchard.Core.Common.Fields
 @{ 
-    ContentItem contentItem = Model.ContentPart.ContentItem;
+    //ContentItem contentItem = Model.ContentPart.ContentItem;
     var field = ((ContentItem) Model.ContentItem).Parts.Select(x => x).SelectMany(x => x.Fields).First(x => string.Equals(x.Name, "PreviewText", StringComparison.OrdinalIgnoreCase));
     string bodyHtml = ((TextField)field).Value;    
     var body = new HtmlString(bodyHtml);

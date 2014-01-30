@@ -334,14 +334,14 @@
 	}
 
 		#content section,
-		#content article
+		#content li article.is-post
 		{
 			margin: 5em 0 0 0;
 			padding: 5em 0 0 0;
 		}
 		
 		#content section:first-child,
-		#content article:first-child
+		#content li:first-child article.is-post
 		{
 			margin: 0 0 50px 0;
 			padding: 0;

@@ -346,6 +346,9 @@
   <ItemGroup>
     <Content Include="MyTheme\Views\Parts.Tags.ShowTags-BlogPost.cshtml" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\Content-BlogPost.cshtml" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

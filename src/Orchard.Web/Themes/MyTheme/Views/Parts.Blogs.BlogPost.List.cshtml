@@ -1,7 +1,7 @@
 ﻿@{
     IEnumerable<object> blogPosts = Model.ContentItems;    
     Model.ContentItems.Classes.Add("is-excerpt");
-    Model.ContentItems.Classes.Add("divided");
+    //Model.ContentItems.Classes.Add("divided");
 }
 @Display(Model.ContentItems)
 @if (blogPosts == null || !blogPosts.Any()) {

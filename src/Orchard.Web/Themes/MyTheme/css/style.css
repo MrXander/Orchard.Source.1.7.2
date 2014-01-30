@@ -1191,14 +1191,14 @@
 	}
 
 		#content section,
-		#content article
+		#content li article.is-post
 		{
 			border-top: solid 2px #e5e5e5;
 			box-shadow: inset 0px 8px 0px 0px #fff, inset 0px 10px 0px 0px #e5e5e5;
 		}
 
 			#content section:first-child,
-			#content article:first-child
+			#content li:first-child article.is-post
 			{
 				border-top: 0;
 				box-shadow: none;

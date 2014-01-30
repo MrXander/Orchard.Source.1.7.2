@@ -25,133 +25,133 @@ msgstr "Адрес url не верен или длиннее 255 символо�
 #| msgid "Comment is mandatory"
 msgctxt "Orchard.Comments.Controllers.CommentController"
 msgid "Comment is mandatory"
-msgstr "Коментарий обязателен"
+msgstr "комментарий обязателен"
 
 #: Orchard.Comments.Controllers.CommentController
 #| msgid "Comment approved successfully"
 msgctxt "Orchard.Comments.Controllers.CommentController"
 msgid "Comment approved successfully"
-msgstr "Коментарий успешно принят"
+msgstr "комментарий успешно принят"
 
 #: Orchard.Comments.Controllers.CommentController
 #| msgid "Comment deleted successfully"
 msgctxt "Orchard.Comments.Controllers.CommentController"
 msgid "Comment deleted successfully"
-msgstr "Коментарий успешно удален"
+msgstr "комментарий успешно удален"
 
 #: Orchard.Comments.Controllers.CommentController
 #| msgid "Comment moderated successfully"
 msgctxt "Orchard.Comments.Controllers.CommentController"
 msgid "Comment moderated successfully"
-msgstr "Коментарий успешно модерирован"
+msgstr "комментарий успешно модерирован"
 
 #: Orchard.Comments.Drivers.CommentPartDriver
 #| msgid "Couldn't moderate comment"
 msgctxt "Orchard.Comments.Drivers.CommentPartDriver"
 msgid "Couldn't moderate comment"
-msgstr "Не удалось модерировать коментарий"
+msgstr "Не удалось модерировать комментарий"
 
 #: Orchard.Comments.Drivers.CommentPartDriver
 #| msgid "Comment successfully moderated."
 msgctxt "Orchard.Comments.Drivers.CommentPartDriver"
 msgid "Comment successfully moderated."
-msgstr "Коментарий успешно модерирован."
+msgstr "комментарий успешно модерирован."
 
 #: Orchard.Comments.Drivers.CommentPartDriver
 #| msgid "Couldn't approve comment"
 msgctxt "Orchard.Comments.Drivers.CommentPartDriver"
 msgid "Couldn't approve comment"
-msgstr "Не удалось принять коментарий"
+msgstr "Не удалось принять комментарий"
 
 #: Orchard.Comments.Drivers.CommentPartDriver
 #| msgid "Comment approved."
 msgctxt "Orchard.Comments.Drivers.CommentPartDriver"
 msgid "Comment approved."
-msgstr "Коментарий принят."
+msgstr "комментарий принят."
 
 #: Orchard.Comments.Drivers.CommentPartDriver
 #| msgid "Couldn't delete comment"
 msgctxt "Orchard.Comments.Drivers.CommentPartDriver"
 msgid "Couldn't delete comment"
-msgstr "Не удалось удалить коментарий"
+msgstr "Не удалось удалить комментарий"
 
 #: Orchard.Comments.Drivers.CommentPartDriver
 #| msgid "Comment successfully deleted."
 msgctxt "Orchard.Comments.Drivers.CommentPartDriver"
 msgid "Comment successfully deleted."
-msgstr "Коментарий успешно удален."
+msgstr "комментарий успешно удален."
 
 #: Orchard.Comments.Drivers.CommentPartDriver
 #| msgid "Comment saved."
 msgctxt "Orchard.Comments.Drivers.CommentPartDriver"
 msgid "Comment saved."
-msgstr "Коментарий сохранен."
+msgstr "комментарий сохранен."
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "Comments"
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "Comments"
-msgstr "Коментарии"
+msgstr "комментарии"
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "Comment Author Url"
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "Comment Author Url"
-msgstr "Адрес автора коментария"
+msgstr "Адрес автора комментария"
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "The url provided by the author of the comment."
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "The url provided by the author of the comment."
-msgstr "Ссылка url автора коментария."
+msgstr "Ссылка url автора комментария."
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "Comment Author Email"
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "Comment Author Email"
-msgstr "Адрес электронной почты автора коментария"
+msgstr "Адрес электронной почты автора комментария"
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "The email provided by the author of the comment."
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "The email provided by the author of the comment."
-msgstr "Адрес электронной почты автора коментария."
+msgstr "Адрес электронной почты автора комментария."
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "Comment approval Url"
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "Comment approval Url"
-msgstr "Ссылка принятия коментария"
+msgstr "Ссылка принятия комментария"
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "The absolute url to follow in order to approve this comment."
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "The absolute url to follow in order to approve this comment."
-msgstr "Абсолютная ссылка для принятия коментария."
+msgstr "Абсолютная ссылка для принятия комментария."
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "Comment moderation Url"
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "Comment moderation Url"
-msgstr "Ссылка модерирования коментария"
+msgstr "Ссылка модерирования комментария"
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "The absolute url to follow in order to moderate this comment."
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "The absolute url to follow in order to moderate this comment."
-msgstr "Абсолютная ссылка для модерирования данного коментария."
+msgstr "Абсолютная ссылка для модерирования данного комментария."
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "Comment deletion Url"
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "Comment deletion Url"
-msgstr "Ссылка удаления коментария"
+msgstr "Ссылка удаления комментария"
 
 #: Orchard.Comments.Tokens.CommentTokens
 #| msgid "The absolute url to follow in order to delete this comment."
 msgctxt "Orchard.Comments.Tokens.CommentTokens"
 msgid "The absolute url to follow in order to delete this comment."
-msgstr "Абсолютная ссылка для удаления данного коментария."
+msgstr "Абсолютная ссылка для удаления данного комментария."
 
 #: ~/Modules/Orchard.Comments/Views/CommentReplyButton.cshtml
 #| msgid "Reply"
@@ -181,25 +181,25 @@ msgstr " | "
 #| msgid "Comments have been disabled for this content."
 msgctxt "~/Modules/Orchard.Comments/Views/Parts.CommentForm.cshtml"
 msgid "Comments have been disabled for this content."
-msgstr "Коментарии отключены для этого контента."
+msgstr "комментарии отключены для этого контента."
 
 #: ~/Modules/Orchard.Comments/Views/Parts.CommentForm.cshtml
 #| msgid "You must be authenticated in order to add a comment."
 msgctxt "~/Modules/Orchard.Comments/Views/Parts.CommentForm.cshtml"
 msgid "You must be authenticated in order to add a comment."
-msgstr "Вы должны быть аутентифицированы для добавления коментария."
+msgstr "Вы должны быть аутентифицированы для добавления комментария."
 
 #: ~/Modules/Orchard.Comments/Views/Parts.CommentForm.cshtml
 #| msgid "Add a Comment"
 msgctxt "~/Modules/Orchard.Comments/Views/Parts.CommentForm.cshtml"
 msgid "Add a Comment"
-msgstr "Добавить коментарий"
+msgstr "Добавить комментарий"
 
 #: ~/Modules/Orchard.Comments/Views/Parts.CommentForm.cshtml
 #| msgid "You must {0} to comment."
 msgctxt "~/Modules/Orchard.Comments/Views/Parts.CommentForm.cshtml"
 msgid "You must {0} to comment."
-msgstr "Вам необходим {0} для коментария."
+msgstr "Вам необходим {0} для комментария."
 
 #: ~/Modules/Orchard.Comments/Views/Parts.CommentForm.cshtml
 #| msgid "log on"
@@ -211,31 +211,31 @@ msgstr "вход"
 #| msgid "Submit Comment"
 msgctxt "~/Modules/Orchard.Comments/Views/Parts.CommentForm.cshtml"
 msgid "Submit Comment"
-msgstr "Отправить коментарий"
+msgstr "Отправить комментарий"
 
 #: ~/Modules/Orchard.Comments/Views/Parts.Comments.Count.cshtml
 #| msgid "No Comments"
 msgctxt "~/Modules/Orchard.Comments/Views/Parts.Comments.Count.cshtml"
 msgid "No Comments"
-msgstr "Нет коментариев"
+msgstr "Нет комментариев"
 
 #: ~/Modules/Orchard.Comments/Views/Parts.ListOfComments.cshtml
 #| msgid "No Comments"
 msgctxt "~/Modules/Orchard.Comments/Views/Parts.ListOfComments.cshtml"
 msgid "No Comments"
-msgstr "Нет коментариев"
+msgstr "Нет комментариев"
 
 #: ~/Modules/Orchard.Comments/Views/Parts.ListOfComments.cshtml
 #| msgid "1 Comment"
 msgctxt "~/Modules/Orchard.Comments/Views/Parts.ListOfComments.cshtml"
 msgid "1 Comment"
-msgstr "1 коментарий"
+msgstr "1 комментарий"
 
 #: ~/Modules/Orchard.Comments/Views/DefinitionTemplates/CommentsPartSettings.cshtml
 #| msgid "Use threaded comments by default"
 msgctxt "~/Modules/Orchard.Comments/Views/DefinitionTemplates/CommentsPartSettings.cshtml"
 msgid "Use threaded comments by default"
-msgstr "Использовать поточные коментарии по-умолчанию."
+msgstr "Использовать поточные комментарии по-умолчанию."
 
 #: ~/Modules/Orchard.Comments/Views/DefinitionTemplates/CommentsPartSettings.cshtml
 #| msgid "Users must be authenticated to comment"
@@ -265,7 +265,7 @@ msgstr "Адрес электронной почты"
 #| msgid "The email address the author has provided with the comment."
 msgctxt "~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comment.AdminEdit.cshtml"
 msgid "The email address the author has provided with the comment."
-msgstr "Адрес электронной почты, представленный автором с коментарием."
+msgstr "Адрес электронной почты, представленный автором с комментарием."
 
 #: ~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comment.AdminEdit.cshtml
 #| msgid "Url"
@@ -277,7 +277,7 @@ msgstr "Адрес url"
 #| msgid "The website url the author has provided with the comment."
 msgctxt "~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comment.AdminEdit.cshtml"
 msgid "The website url the author has provided with the comment."
-msgstr "Адрес url, представленный автором с коментарием."
+msgstr "Адрес url, представленный автором с комментарием."
 
 #: ~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comment.AdminEdit.cshtml
 #| msgid "Comment"
@@ -289,7 +289,7 @@ msgstr "Коментировать"
 #| msgid "The body of the comment."
 msgctxt "~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comment.AdminEdit.cshtml"
 msgid "The body of the comment."
-msgstr "Тело коментария."
+msgstr "Тело комментария."
 
 #: ~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comment.AdminEdit.cshtml
 #| msgid "Save"
@@ -319,7 +319,7 @@ msgstr "Принять"
 #| msgid "Add a Comment"
 msgctxt "~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comment.cshtml"
 msgid "Add a Comment"
-msgstr "Добавить коментарий"
+msgstr "Добавить комментарий"
 
 #: ~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comment.cshtml
 #| msgid "Name"
@@ -355,31 +355,31 @@ msgstr "Коментировать"
 #| msgid "Show comments"
 msgctxt "~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comments.Comments.cshtml"
 msgid "Show comments"
-msgstr "Показать коментарии"
+msgstr "Показать комментарии"
 
 #: ~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comments.Comments.cshtml
 #| msgid "Enable to show the existing comments."
 msgctxt "~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comments.Comments.cshtml"
 msgid "Enable to show the existing comments."
-msgstr "Разрешить показ существующих коментариев."
+msgstr "Разрешить показ существующих комментариев."
 
 #: ~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comments.Comments.cshtml
 #| msgid "Allow threaded comments"
 msgctxt "~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comments.Comments.cshtml"
 msgid "Allow threaded comments"
-msgstr "Разрешить потоковые коментарии"
+msgstr "Разрешить потоковые комментарии"
 
 #: ~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comments.Comments.cshtml
 #| msgid "Enable to allow users to answer directly to other comments."
 msgctxt "~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comments.Comments.cshtml"
 msgid "Enable to allow users to answer directly to other comments."
-msgstr "Разрешить пользователям отвечать напрямую на другие коментарии."
+msgstr "Разрешить пользователям отвечать напрямую на другие комментарии."
 
 #: ~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comments.SiteSettings.cshtml
 #| msgid "Check if you want to manually approve comments before they can be displayed."
 msgctxt "~/Modules/Orchard.Comments/Views/EditorTemplates/Parts.Comments.SiteSettings.cshtml"
 msgid "Check if you want to manually approve comments before they can be displayed."
-msgstr "Отметить, если необходимо подтверждение коментариев до их показа."
+msgstr "Отметить, если необходимо подтверждение комментариев до их показа."
 
 #: ~/Modules/Orchard.Comments/Module.txt
 #| msgid "Name"
@@ -571,7 +571,7 @@ msgstr "Комментарии"
 #| msgid "Orchard.Comments.Description"
 msgctxt "~/Modules/Orchard.Comments/Module.txt"
 msgid "Standard content item comments."
-msgstr "Стандартный контентный элемент коментариев."
+msgstr "Стандартный контентный элемент комментариев."
 
 #: ~/Modules/Orchard.Comments/Module.txt
 #| msgid "Orchard.Comments.Category"

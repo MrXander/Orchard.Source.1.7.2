@@ -9,11 +9,8 @@
     Model.Classes.Add("content-item");
 
     var contentTypeClassName = ((string)Model.ContentItem.ContentType).HtmlClassify();
-    Model.Classes.Add(contentTypeClassName);
-
-    var tag = Tag(Model, "article");
+    Model.Classes.Add(contentTypeClassName);   
 }
-@tag.StartElement
 <header>
     @Display(Model.Header)
     @if (Model.Meta != null)
@@ -21,6 +18,7 @@
         @Display(Model.Meta)            
     }
 </header>
+
 @Display(Model.Content)
 
 @if (Model.Footer != null)
@@ -29,8 +27,3 @@
         @Display(Model.Footer)
     </footer>
 }
-@tag.EndElement
-
-<ul class="actions">
-    <li>@Html.ItemDisplayLink(T("more").ToString(), (IContent)Model.ContentItem, new Dictionary<string, object> { { "class", "button button-icon fa fa-file" } })
-</ul>
