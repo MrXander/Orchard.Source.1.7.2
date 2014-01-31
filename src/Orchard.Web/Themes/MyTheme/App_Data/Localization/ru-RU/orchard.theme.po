@@ -104,6 +104,12 @@ msgid "No Comments"
 msgstr "Нет комментариев"
 
 #: ~/Themes/MyTheme/Views/Parts.ListOfComments.cshtml
+#| msgid "{0} Comments"
+msgctxt "~/Themes/MyTheme/Views/Parts.ListOfComments.cshtml"
+msgid "{0} Comments"
+msgstr "{0} комментариев"
+
+#: ~/Themes/MyTheme/Views/Parts.ListOfComments.cshtml
 #| msgid "1 Comment"
 msgctxt "~/Themes/MyTheme/Views/Parts.ListOfComments.cshtml"
 msgid "1 Comment"
