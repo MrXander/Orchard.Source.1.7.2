@@ -6,12 +6,13 @@
     Model.List.Classes.Add("comments");
 }
 
-<h2 class="comment-count">@T.Plural("No Comments", "1 Comment", "{0} Comments", (int)Model.CommentCount)</h2>
+<h2 class="comment-count fa fa-comments">
+    <span>@T.Plural("No Comments", "1 Comment", "{0} Comments", (int)Model.CommentCount)</span>
+</h2>
 @Display(Model.List)
 
 @* render reply button if threaded comments enabled *@
-@if(commentsPart.ThreadedComments) {
-    //Script.Require("jQuery");
+@if(commentsPart.ThreadedComments) {    
     using (Script.Foot()) {
 
 <script type="text/javascript">
@@ -20,20 +21,23 @@
         $('.comment-reply-button').click(function() {
             var self = $(this);
 
+            $('.comment-reply-button').not(self).removeClass("highlighted");
+            self.toggleClass("highlighted");
+
             var reply = $('#Comments_RepliedOn');
             var currentReply = reply.val();
+            var id = self.data('id');
 
             @* should we restore the form at its original location ? *@
-            if (currentReply && currentReply.length > 0) {
+            if (currentReply && currentReply.length > 0 && id == currentReply) {
                 reply.val('');
                 $('#comment-form-beacon').after($('.comment-form'));
             } else {
-                @* assign repliedOn id *@
-                var id = self.data('id');
+                @* assign repliedOn id *@                
                 reply.val(id);
 
                 @* inject the form in the replied zone *@
-                $('.comment-form').appendTo(self.parents('article').first());
+                $('.comment-form').appendTo(self.parents('article').children('p').first());
             }
 
             @* don't execute the link action *@

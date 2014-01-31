@@ -123,6 +123,11 @@
 		clear: both;
 	}
 
+    .highlighted {
+        color: #ed786a;
+        border-bottom-color: rgba(255,255,255,0);
+    }
+
 	/* Sections/Articles */
 	
 		section,
@@ -955,7 +960,11 @@
 	}
 
     .tags li {
-        float: left;
+        float: left;        
+    }
+    
+    .tags li:nth-child(even) {        
+        padding-left: 0.5em;
     }
 
 /*********************************************************************************/
@@ -1240,6 +1249,29 @@
 /*********************************************************************************/
 /* Comments
 /*********************************************************************************/
+.comment-count {    
+	font-size: 0.85em;
+	letter-spacing: 2px;
+	padding: 0.25em 1em 0.25em 0em;
+	margin: 0 0 2.5em 0;
+}
+
+    .comment-count span {
+        padding-left: 0.5em;
+    }
+
+.comments .when {
+    font-weight: 100;
+}
+
+.comments li {
+    padding-top: 15px;
+}
+
+.comments form {
+    padding: 15px;
+}
+
 .comments li li
 {
     padding-top: 10px;
