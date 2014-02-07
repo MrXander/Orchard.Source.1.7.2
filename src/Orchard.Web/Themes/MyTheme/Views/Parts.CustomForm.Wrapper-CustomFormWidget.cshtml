@@ -1,0 +1,97 @@
+﻿@{
+    dynamic editor = Model.Editor;
+
+    if (TempData.ContainsKey("CustomFormWidget.InvalidCustomFormState"))
+    {
+        editor = TempData["CustomFormWidget.InvalidCustomFormState"];
+    }
+
+    // remove default Save/Publish buttons
+    editor.Zones["Sidebar"].Items.Clear();
+
+    var url = Url.Action("Create", "Item", new {area = "Orchard.CustomForms", id = Model.ContentItem.Id});
+}
+
+<div class="row">
+    <div class="6u">
+        <section>
+            @using (Html.BeginFormAntiForgeryPost(url, FormMethod.Post))
+            {
+                @Html.ValidationSummary()
+
+                <div class="row half">
+                    <div class="6u">
+                        <input name="ContactUsForm.Name.Text" placeholder="Name" type="text" class="text" data-validate="required">
+                    </div>
+                    <div class="6u">
+                        <input name="ContactUsForm.Email.Text" placeholder="Email" type="text" class="text" data-validate="required,email">
+                    </div>
+                </div>
+                <div class="row half">
+                    <div class="12u">
+                        <textarea name="ContactUsForm.Text.Text" placeholder="Message" data-validate="required"></textarea>
+                    </div>
+                </div>                
+                
+                @Html.Hidden("returnUrl", Request.RawUrl);
+                
+                <div class="row half">
+                    <div class="12u"><a href="#" class="sendFeedback button button-icon fa fa-envelope">Send Message</a></div>
+                </div>
+                
+                <input type="hidden" name="submit.Save" value="submit.Save"/>                                               
+@*               
+                <fieldset class="submit-button">
+                    <button type="submit" name="submit.Save" value="submit.Save">@T("Submit")</button>
+                </fieldset>*@
+            }
+            <script type="text/javascript" src="@Url.Content("~/themes/mytheme/scripts/verify.notify.js")"></script>
+            <script type="text/javascript">
+                $("form").on("submit", function() {
+                    var d = $(this).serialize();
+                    $.post("@url", d,
+                        function (data, textStatus, jqXHR) {
+                            alert(data);
+                        },
+                    "json");
+                    return false;
+                });
+
+                $(".sendFeedback").click(function () {
+                    var form = $("form");
+                    //$("form").trigger("submit");
+                    form.validate(function() {
+                        var d = form.serialize();
+                        $.post("@url", d,
+                            function (data, textStatus, jqXHR) {
+                                alert(data);
+                            },
+                        "json");
+                    });
+                    return false;
+                });
+            </script>
+        </section>
+    </div>
+    <div class="6u">
+        <section>
+            <p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat Phaselamet mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada.</p>
+            <div class="row">
+                <ul class="icons 6u">
+                    <li class="fa fa-home">1234 Somewhere Road<br>
+                        Nashville, TN 00000<br>
+                        USA</li>
+                    <li class="fa fa-phone">(000) 000-0000</li>
+                    <li class="fa fa-envelope"><a href="#">info@untitled.tld</a></li>
+                </ul>
+                <ul class="icons 6u">
+                    <li class="fa fa-twitter"><a href="http://twitter.com/n33co">untitled-tld</a></li>
+                    <li class="fa fa-dribbble"><a href="http://dribbble.com/n33">dribbble.com/untitled-tld</a></li>
+                    <li class="fa fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
+                    <li class="fa fa-google-plus"><a href="#">google.com/+untitled-tld</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+

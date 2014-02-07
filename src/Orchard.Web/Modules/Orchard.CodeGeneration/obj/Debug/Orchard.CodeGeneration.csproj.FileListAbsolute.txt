@@ -121,6 +121,5 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CodeGeneration\
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CodeGeneration\bin\Iesi.Collections.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CodeGeneration\bin\Iesi.Collections.xml
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CodeGeneration\bin\System.Net.Http.Formatting.xml
-C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CodeGeneration\obj\Debug\Orchard.CodeGeneration.csprojResolveAssemblyReference.cache
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CodeGeneration\obj\Debug\Orchard.CodeGeneration.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CodeGeneration\obj\Debug\Orchard.CodeGeneration.pdb

@@ -121,6 +121,5 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ImportExport\bi
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ImportExport\bin\Iesi.Collections.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ImportExport\bin\Iesi.Collections.xml
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ImportExport\bin\System.Net.Http.Formatting.xml
-C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ImportExport\obj\Debug\Orchard.ImportExport.csprojResolveAssemblyReference.cache
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ImportExport\obj\Debug\Orchard.ImportExport.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ImportExport\obj\Debug\Orchard.ImportExport.pdb

@@ -23,6 +23,8 @@
     </Match>
   </Match>
 
+  <Place Fields_Boolean-IsAjaxForm="-"/>
+  
   <!-- 
   <Place Parts_Blogs_BlogArchives="Content:before"/>
   <Place Parts_Blogs_RecentBlogPosts="Content:after"/>

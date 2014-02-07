@@ -129,4 +129,3 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ContentTypes\bi
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ContentTypes\bin\System.Net.Http.Formatting.xml
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ContentTypes\obj\Debug\Orchard.ContentTypes.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ContentTypes\obj\Debug\Orchard.ContentTypes.pdb
-C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.ContentTypes\obj\Debug\Orchard.ContentTypes.csprojResolveAssemblyReference.cache

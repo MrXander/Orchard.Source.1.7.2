@@ -174,6 +174,11 @@ namespace Orchard.CustomForms.Controllers {
                 }
             }
 
+            var isAjaxForm = customForm.Fields.FirstOrDefault(x => string.Equals(x.Name, "IsAjaxForm", StringComparison.OrdinalIgnoreCase));
+            if (isAjaxForm != null && isAjaxForm.Storage.) {
+                return new JsonResult() { Data = customForm.Message };
+            }
+
             var referrer = Request.UrlReferrer != null ? Request.UrlReferrer.ToString() : null;
             return this.RedirectLocal(returnUrl, () => this.RedirectLocal(referrer, () => Redirect(Request.RawUrl)));
         }

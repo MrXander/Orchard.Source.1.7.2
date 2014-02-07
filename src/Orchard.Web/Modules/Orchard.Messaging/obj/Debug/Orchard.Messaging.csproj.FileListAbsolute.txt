@@ -115,6 +115,5 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Messaging\bin\N
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Messaging\bin\Iesi.Collections.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Messaging\bin\Iesi.Collections.xml
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Messaging\bin\System.Net.Http.Formatting.xml
-C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Messaging\obj\Debug\Orchard.Messaging.csprojResolveAssemblyReference.cache
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Messaging\obj\Debug\Orchard.Messaging.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Messaging\obj\Debug\Orchard.Messaging.pdb

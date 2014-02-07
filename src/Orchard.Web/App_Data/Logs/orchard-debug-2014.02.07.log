@@ -1,0 +1,70 @@
+2014-02-07 11:40:09,917 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 11:40:13,020 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 11:42:26,873 [16] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 11:42:31,030 [16] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 12:57:02,395 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 12:57:05,427 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 13:04:54,557 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 13:04:57,673 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 13:07:23,511 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 13:07:26,317 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 13:08:45,459 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 13:08:48,178 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 16:45:58,679 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 16:46:03,613 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 16:51:40,839 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 16:51:41,373 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 16:55:00,158 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 16:55:00,655 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 16:58:22,192 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 16:58:22,647 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 17:01:36,404 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 17:01:37,703 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 17:03:51,197 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 17:03:54,558 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 17:09:52,731 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-07 17:09:55,470 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-07 17:13:45,046 [8] Orchard.Exceptions.DefaultExceptionPolicy - An unexpected exception was caught
+NHibernate.Exceptions.GenericADOException: could not insert: [Orchard.ContentManagement.Records.ContentItemRecord][SQL: INSERT INTO Orchard_Framework_ContentItemRecord (Data, ContentType_id) VALUES (?, ?)] ---> System.Data.SqlServerCe.SqlCeLockTimeoutException: SQL Server Compact timed out waiting for a lock. The default lock time is 2000ms for devices and 5000ms for desktops. The default lock timeout can be increased in the connection string using the ssce: default lock timeout property. [ Session id = 2,Thread id = 6696,Process id = 3932,Table name = Orchard_Framework_ContentItemRecord,Conflict type = x lock (x blocks),Resource = PAG (idx): 1066 ]
+   ? System.Data.SqlServerCe.SqlCeCommand.ProcessResults(Int32 hr)
+   ? System.Data.SqlServerCe.SqlCeCommand.ExecuteCommandText(IntPtr& pCursor, Boolean& isBaseTableCursor)
+   ? System.Data.SqlServerCe.SqlCeCommand.ExecuteCommand(CommandBehavior behavior, String method, ResultSetOptions options)
+   ? System.Data.SqlServerCe.SqlCeCommand.ExecuteNonQuery()
+   ? NHibernate.AdoNet.AbstractBatcher.ExecuteNonQuery(IDbCommand cmd) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\AdoNet\AbstractBatcher.cs:?????? 203
+   ? NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Id\Insert\AbstractSelectingDelegate.cs:?????? 38
+   --- ????? ??????????? ??????????? ????? ?????????? ---
+   ? NHibernate.Id.Insert.AbstractSelectingDelegate.PerformInsert(SqlCommandInfo insertSQL, ISessionImplementor session, IBinder binder) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Id\Insert\AbstractSelectingDelegate.cs:?????? 47
+   ? NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Boolean[] notNull, SqlCommandInfo sql, Object obj, ISessionImplementor session) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:?????? 2575
+   ? NHibernate.Persister.Entity.AbstractEntityPersister.Insert(Object[] fields, Object obj, ISessionImplementor session) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Persister\Entity\AbstractEntityPersister.cs:?????? 3035
+   ? NHibernate.Action.EntityIdentityInsertAction.Execute() ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Action\EntityIdentityInsertAction.cs:?????? 75
+   ? NHibernate.Engine.ActionQueue.Execute(IExecutable executable) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Engine\ActionQueue.cs:?????? 136
+   ? NHibernate.Event.Default.AbstractSaveEventListener.PerformSaveOrReplicate(Object entity, EntityKey key, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:?????? 259
+   ? NHibernate.Event.Default.AbstractSaveEventListener.PerformSave(Object entity, Object id, IEntityPersister persister, Boolean useIdentityColumn, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:?????? 187
+   ? NHibernate.Event.Default.AbstractSaveEventListener.SaveWithGeneratedId(Object entity, String entityName, Object anything, IEventSource source, Boolean requiresImmediateIdAccess) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Event\Default\AbstractSaveEventListener.cs:?????? 119
+   ? NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:?????? 162
+   ? NHibernate.Event.Default.DefaultSaveEventListener.SaveWithGeneratedOrRequestedId(SaveOrUpdateEvent event) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveEventListener.cs:?????? 29
+   ? NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.EntityIsTransient(SaveOrUpdateEvent event) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:?????? 148
+   ? NHibernate.Event.Default.DefaultSaveEventListener.PerformSaveOrUpdate(SaveOrUpdateEvent event) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveEventListener.cs:?????? 21
+   ? NHibernate.Event.Default.DefaultSaveOrUpdateEventListener.OnSaveOrUpdate(SaveOrUpdateEvent event) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Event\Default\DefaultSaveOrUpdateEventListener.cs:?????? 53
+   ? NHibernate.Impl.SessionImpl.FireSave(SaveOrUpdateEvent event) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:?????? 2673
+   ? NHibernate.Impl.SessionImpl.Save(Object obj) ? c:\Users\sebros\Documents\My Projects\nhibernate-core\src\NHibernate\Impl\SessionImpl.cs:?????? 485
+   ? Orchard.Data.Repository`1.Create(T entity) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\Repository.cs:?????? 96
+   ? Orchard.Data.Repository`1.Orchard.Data.IRepository<T>.Create(T entity) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Data\Repository.cs:?????? 36
+   ? Orchard.ContentManagement.DefaultContentManager.Create(ContentItem contentItem, VersionOptions options) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\ContentManagement\DefaultContentManager.cs:?????? 511
+   ? Orchard.ContentManagement.DefaultContentManager.Create(ContentItem contentItem) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\ContentManagement\DefaultContentManager.cs:?????? 482
+   ? Orchard.CustomForms.Controllers.ItemController.CreatePOST(Int32 id, String returnUrl, Action`1 conditionallyPublish)
+   ? Orchard.CustomForms.Controllers.ItemController.CreatePOST(Int32 id, String returnUrl)
+   ? lambda_method(Closure , ControllerBase , Object[] )
+   ? System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   ? System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   ? System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   ? System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<InvokeActionMethodWithFilters>b__10()
+   ? System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   ? System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   ? System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   ? System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass13.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   ? System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+2014-02-07 17:13:45,649 [8] NHibernate.AssertionFailure - An AssertionFailure occurred - this may indicate a bug in NHibernate or in your custom types.
+NHibernate.AssertionFailure: null id in Orchard.ContentManagement.Records.ContentItemRecord entry (don't flush the Session after an exception occurs)
+2014-02-07 17:21:04,955 [20] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "imagepowertools_28a2f1dc98c7"
+2014-02-07 17:21:05,847 [21] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!

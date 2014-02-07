@@ -5,7 +5,7 @@
 */
 
 window._skel_config = {
-	prefix: 'http://localhost:30321/OrchardLocal/themes/mytheme/css/style',
+	prefix: 'http://localhost:30321/themes/mytheme/css/style',
 	resetCSS: true,
 	boxModel: 'border',
 	grid: {
