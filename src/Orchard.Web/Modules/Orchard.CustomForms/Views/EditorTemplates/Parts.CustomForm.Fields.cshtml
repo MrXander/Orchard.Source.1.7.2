@@ -15,6 +15,11 @@
 </fieldset>
 
 <fieldset>
+    @Html.EditorFor(m => m.CustomFormPart.IsAjaxForm)
+    <label for="@Html.FieldIdFor(m => m.CustomFormPart.IsAjaxForm)" class="forcheckbox">@T("Ajax form")</label>
+</fieldset>
+
+<fieldset>
     @Html.EditorFor(m => m.CustomFormPart.SaveContentItem)
     <label for="@Html.FieldIdFor(m => m.CustomFormPart.SaveContentItem)" class="forcheckbox">@T("Save the content item once the form is submitted")</label>
     <span class="hint">@T("Check if you want to save the content item associated to the form. Leave empty if you just want to trigger an action on the event.")</span>

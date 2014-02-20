@@ -6,12 +6,6 @@
 }
 <link href='http://fonts.googleapis.com/css?family=Arvo:700|Open+Sans&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
-@using (Script.Head())
-{            
-    <!-- Put this script tag to the <head> of your page -->
-    //<script type="text/javascript" src="//vk.com/js/api/openapi.js?105"></script>           
-}
-
 <!--[if lte IE 8]><script type="text/javascript" src="@Url.Content("~/themes/mytheme/scripts/html5shiv.js")"></script><![endif]-->
 @{    
     //Script.Include("jquery.min.js").AtHead();
@@ -21,7 +15,7 @@
     Script.Include("skel.min.js").AtHead();
     Script.Include("skel-panels.min.js").AtHead();
     Script.Include("touchTouch.jquery.js").AtHead();
-    
+    Script.Include("verify.notify.js").AtHead();        
 
     if (Request.Path.EndsWith("/first-gallery"))
     {

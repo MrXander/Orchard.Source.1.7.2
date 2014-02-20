@@ -19,10 +19,12 @@ using Orchard.Tokens;
 using Orchard.UI.Notify;
 using Orchard.Workflows.Services;
 
-namespace Orchard.CustomForms.Controllers {
+namespace Orchard.CustomForms.Controllers
+{
     [Themed(true)]
     [ValidateInput(false)]
-    public class ItemController : Controller, IUpdateModel {
+    public class ItemController : Controller, IUpdateModel
+    {
         private readonly IContentManager _contentManager;
         private readonly ITransactionManager _transactionManager;
         private readonly IRulesManager _rulesManager;
@@ -36,7 +38,8 @@ namespace Orchard.CustomForms.Controllers {
             IShapeFactory shapeFactory,
             IRulesManager rulesManager,
             ITokenizer tokenizer,
-            IWorkflowManager workflowManager) {
+            IWorkflowManager workflowManager)
+        {
             Services = orchardServices;
             _contentManager = contentManager;
             _transactionManager = transactionManager;
@@ -53,10 +56,12 @@ namespace Orchard.CustomForms.Controllers {
         public Localizer T { get; set; }
         public ILogger Logger { get; set; }
 
-        public ActionResult Create(int id) {
+        public ActionResult Create(int id)
+        {
             var form = _contentManager.Get(id);
 
-            if(form == null || !form.Has<CustomFormPart>()) {
+            if (form == null || !form.Has<CustomFormPart>())
+            {
                 return HttpNotFound();
             }
 
@@ -64,7 +69,8 @@ namespace Orchard.CustomForms.Controllers {
 
             var contentItem = _contentManager.New(customForm.ContentType);
 
-            if(!contentItem.Has<ICommonPart>()) {
+            if (!contentItem.Has<ICommonPart>())
+            {
                 throw new OrchardException(T("The content type must have CommonPart attached"));
             }
 
@@ -83,8 +89,10 @@ namespace Orchard.CustomForms.Controllers {
 
         [HttpPost, ActionName("Create")]
         [FormValueRequired("submit.Save")]
-        public ActionResult CreatePOST(int id, string returnUrl) {
-            return CreatePOST(id, returnUrl, contentItem => {
+        public ActionResult CreatePOST(int id, string returnUrl)
+        {
+            return CreatePOST(id, returnUrl, contentItem =>
+            {
                 if (!contentItem.Has<IPublishingControlAspect>() && !contentItem.TypeDefinition.Settings.GetModel<ContentTypeSettings>().Draftable)
                     _contentManager.Publish(contentItem);
             });
@@ -92,10 +100,12 @@ namespace Orchard.CustomForms.Controllers {
 
         [HttpPost, ActionName("Create")]
         [FormValueRequired("submit.Publish")]
-        public ActionResult CreateAndPublishPOST(int id, string returnUrl) {
+        public ActionResult CreateAndPublishPOST(int id, string returnUrl)
+        {
             var form = _contentManager.Get(id);
 
-            if (form == null || !form.Has<CustomFormPart>()) {
+            if (form == null || !form.Has<CustomFormPart>())
+            {
                 return HttpNotFound();
             }
 
@@ -110,10 +120,12 @@ namespace Orchard.CustomForms.Controllers {
             return CreatePOST(id, returnUrl, contentItem => _contentManager.Publish(contentItem));
         }
 
-        private ActionResult CreatePOST(int id, string returnUrl, Action<ContentItem> conditionallyPublish) {
+        private ActionResult CreatePOST(int id, string returnUrl, Action<ContentItem> conditionallyPublish)
+        {
             var form = _contentManager.Get(id);
 
-            if (form == null || !form.Has<CustomFormPart>()) {
+            if (form == null || !form.Has<CustomFormPart>())
+            {
                 return HttpNotFound();
             }
 
@@ -125,20 +137,24 @@ namespace Orchard.CustomForms.Controllers {
                 return new HttpUnauthorizedResult();
 
             dynamic model = _contentManager.UpdateEditor(contentItem, this);
-            
-            if (!ModelState.IsValid) {
+
+            if (!ModelState.IsValid)
+            {
                 _transactionManager.Cancel();
 
                 // if custom form is inside a widget, we display the form itself
-                if (form.ContentType == "CustomFormWidget") {
-                    foreach (var error in ModelState.Values.SelectMany(m => m.Errors).Select(e => e.ErrorMessage)) {
+                if (form.ContentType == "CustomFormWidget")
+                {
+                    foreach (var error in ModelState.Values.SelectMany(m => m.Errors).Select(e => e.ErrorMessage))
+                    {
                         Services.Notifier.Error(T(error));
                     }
 
                     // save the updated editor shape into TempData to survive a redirection and keep the edited values
                     TempData["CustomFormWidget.InvalidCustomFormState"] = model;
 
-                    if (returnUrl != null) {
+                    if (returnUrl != null)
+                    {
                         return this.RedirectLocal(returnUrl);
                     }
                 }
@@ -157,37 +173,46 @@ namespace Orchard.CustomForms.Controllers {
             _workflowManager.TriggerEvent(FormSubmittedActivity.EventName, customForm.ContentItem,
                     () => new Dictionary<string, object> { { "Content", contentItem } });
 
-            if (customForm.Redirect) {
+            if (customForm.Redirect)
+            {
                 returnUrl = _tokenizer.Replace(customForm.RedirectUrl, new Dictionary<string, object> { { "Content", contentItem } });
             }
 
             // save the submitted form
-            if (customForm.SaveContentItem) {
-                _contentManager.Create(contentItem);
-                conditionallyPublish(contentItem);
+            if (customForm.SaveContentItem)
+            {
+                _contentManager.Create(contentItem, VersionOptions.Draft);
+
+                //в ContentItemVersionRecord.Data заносилась пустота. Этот костыль исправляет
+                contentItem.VersionRecord.Data = contentItem.Record.Data;
+
+                //conditionallyPublish(contentItem);
             }
 
             // writes a confirmation message
-            if (customForm.CustomMessage) {
-                if (!String.IsNullOrWhiteSpace(customForm.Message)) {
+            if (customForm.CustomMessage)
+            {
+                if (!String.IsNullOrWhiteSpace(customForm.Message))
+                {
                     Services.Notifier.Information(T(customForm.Message));
                 }
             }
-
-            var isAjaxForm = customForm.Fields.FirstOrDefault(x => string.Equals(x.Name, "IsAjaxForm", StringComparison.OrdinalIgnoreCase));
-            if (isAjaxForm != null && isAjaxForm.Storage.) {
+            var referrer = Request.UrlReferrer != null ? Request.UrlReferrer.ToString() : null;
+            if (customForm.IsAjaxForm)
+            {
                 return new JsonResult() { Data = customForm.Message };
             }
 
-            var referrer = Request.UrlReferrer != null ? Request.UrlReferrer.ToString() : null;
             return this.RedirectLocal(returnUrl, () => this.RedirectLocal(referrer, () => Redirect(Request.RawUrl)));
         }
 
-        bool IUpdateModel.TryUpdateModel<TModel>(TModel model, string prefix, string[] includeProperties, string[] excludeProperties) {
+        bool IUpdateModel.TryUpdateModel<TModel>(TModel model, string prefix, string[] includeProperties, string[] excludeProperties)
+        {
             return TryUpdateModel(model, prefix, includeProperties, excludeProperties);
         }
 
-        void IUpdateModel.AddModelError(string key, LocalizedString errorMessage) {
+        void IUpdateModel.AddModelError(string key, LocalizedString errorMessage)
+        {
             ModelState.AddModelError(key, errorMessage.ToString());
         }
     }

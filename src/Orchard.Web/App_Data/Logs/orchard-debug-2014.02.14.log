@@ -1,0 +1,283 @@
+2014-02-14 16:21:09,345 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-14 16:21:13,355 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-14 16:27:24,396 [20] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-14 16:27:25,774 [23] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-14 16:27:26,860 [22] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.AssemblyBuilder.Compile()
+   ? System.Web.Compilation.BuildProvidersCompiler.PerformBuild()
+   ? System.Web.Compilation.BuildManager.CompileWebFile(VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:26,868 [22] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "Orchard.CustomForms"
+2014-02-14 16:27:26,891 [23] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-14 16:27:30,797 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,842 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,849 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,862 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,870 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,877 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,884 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,892 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,900 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,907 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,914 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,920 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,927 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,934 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,943 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,954 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,961 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,971 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,979 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,990 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:30,998 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:31,006 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:31,013 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:31,020 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:31,026 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:27:31,089 [32] Orchard.Environment.DefaultBuildManager - Error when compiling assembly under ~/Modules/Orchard.CustomForms/Orchard.CustomForms.csproj.
+System.Web.HttpCompileException (0x80004005): c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\Controllers\ItemController.cs(13): error CS0234: The type or namespace name 'Fields' does not exist in the namespace 'Orchard' (are you missing an assembly reference?)
+   ? System.Web.Compilation.BuildManager.PostProcessFoundBuildResult(BuildResult result, Boolean keyFromVPP, VirtualPath virtualPath)
+   ? System.Web.Compilation.BuildManager.GetBuildResultFromCacheInternal(String cacheKey, Boolean keyFromVPP, VirtualPath virtualPath, Int64 hashCode, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultFromCacheInternal(VirtualPath virtualPath, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   ? System.Web.Compilation.BuildManager.GetCompiledAssembly(String virtualPath)
+   ? Orchard.Environment.DefaultBuildManager.GetCompiledAssembly(String virtualPath) ? c:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard\Environment\IBuildManager.cs:?????? 53
+2014-02-14 16:29:27,958 [9] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-14 16:29:29,160 [32] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-14 16:29:29,587 [32] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-14 16:32:51,265 [5] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!
+2014-02-14 16:32:53,796 [5] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "MyTheme"
+2014-02-14 17:17:28,733 [71] Orchard.Environment.Extensions.ExtensionManager - No suitable loader found for extension "imagepowertools_28a2f1dc98c7"
+2014-02-14 17:17:30,061 [70] Orchard.Environment.Extensions.ExtensionLoaderCoordinator - No loader found for extension "imagepowertools_28a2f1dc98c7"!

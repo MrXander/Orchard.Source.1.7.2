@@ -1,0 +1,28 @@
+﻿2014-02-20 18:35:57,903 [34] Orchard.Email.Services.EmailMessagingChannel - An unexpected error while sending a message to reliagram@gmail.com: ActionEmail
+System.Net.Mail.SmtpException: ???????????? ??? ????????? ?????. ????? ???????: 5.7.1 Sender address rejected: not owned by auth user.
+   ? System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   ? System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   ? System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   ? System.Net.Mail.SmtpClient.Send(MailMessage message)
+   ? Orchard.Email.Services.EmailMessagingChannel.SendMessage(MessageContext context)
+2014-02-20 18:36:06,133 [34] Orchard.Email.Services.EmailMessagingChannel - An unexpected error while sending a message to reliagram@gmail.com: ActionEmail
+System.Net.Mail.SmtpException: ???????????? ??? ????????? ?????. ????? ???????: 5.7.1 Sender address rejected: not owned by auth user.
+   ? System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   ? System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   ? System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   ? System.Net.Mail.SmtpClient.Send(MailMessage message)
+   ? Orchard.Email.Services.EmailMessagingChannel.SendMessage(MessageContext context)
+2014-02-20 18:37:41,534 [30] Orchard.Email.Services.EmailMessagingChannel - An unexpected error while sending a message to reliagram@gmail.com: ActionEmail
+System.Net.Mail.SmtpException: ???????????? ??? ????????? ?????. ????? ???????: 5.7.1 Sender address rejected: not owned by auth user.
+   ? System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   ? System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   ? System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   ? System.Net.Mail.SmtpClient.Send(MailMessage message)
+   ? Orchard.Email.Services.EmailMessagingChannel.SendMessage(MessageContext context)
+2014-02-20 18:37:46,068 [30] Orchard.Email.Services.EmailMessagingChannel - An unexpected error while sending a message to reliagram@gmail.com: ActionEmail
+System.Net.Mail.SmtpException: ???????????? ??? ????????? ?????. ????? ???????: 5.7.1 Sender address rejected: not owned by auth user.
+   ? System.Net.Mail.MailCommand.CheckResponse(SmtpStatusCode statusCode, String response)
+   ? System.Net.Mail.MailCommand.Send(SmtpConnection conn, Byte[] command, MailAddress from, Boolean allowUnicode)
+   ? System.Net.Mail.SmtpTransport.SendMail(MailAddress sender, MailAddressCollection recipients, String deliveryNotify, Boolean allowUnicode, SmtpFailedRecipientException& exception)
+   ? System.Net.Mail.SmtpClient.Send(MailMessage message)
+   ? Orchard.Email.Services.EmailMessagingChannel.SendMessage(MessageContext context)

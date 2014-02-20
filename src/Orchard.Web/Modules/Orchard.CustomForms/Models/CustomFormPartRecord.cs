@@ -14,5 +14,8 @@ namespace Orchard.CustomForms.Models {
         [StringLengthMax]
         public virtual string RedirectUrl { get; set; }
         public virtual bool Redirect { get; set; }
+
+        public virtual bool IsAjaxForm { get; set; }
+
     }
 }

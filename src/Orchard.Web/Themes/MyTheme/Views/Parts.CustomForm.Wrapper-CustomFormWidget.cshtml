@@ -39,27 +39,13 @@
                     <div class="12u"><a href="#" class="sendFeedback button button-icon fa fa-envelope">Send Message</a></div>
                 </div>
                 
-                <input type="hidden" name="submit.Save" value="submit.Save"/>                                               
-@*               
-                <fieldset class="submit-button">
-                    <button type="submit" name="submit.Save" value="submit.Save">@T("Submit")</button>
-                </fieldset>*@
-            }
-            <script type="text/javascript" src="@Url.Content("~/themes/mytheme/scripts/verify.notify.js")"></script>
-            <script type="text/javascript">
-                $("form").on("submit", function() {
-                    var d = $(this).serialize();
-                    $.post("@url", d,
-                        function (data, textStatus, jqXHR) {
-                            alert(data);
-                        },
-                    "json");
-                    return false;
-                });
-
+                
+                <button type="submit" name="submit.Save" value="submit.Save">@T("Submit")</button>
+                <input type="hidden" name="submit.Save" value="submit.Save"/>
+            }            
+            <script type="text/javascript">                
                 $(".sendFeedback").click(function () {
-                    var form = $("form");
-                    //$("form").trigger("submit");
+                    var form = $("form");                    
                     form.validate(function() {
                         var d = form.serialize();
                         $.post("@url", d,

@@ -142,3 +142,5 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\obj\Debug\Orchard.CustomForms.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\obj\Debug\Orchard.CustomForms.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\obj\Debug\Orchard.CustomForms.csprojResolveAssemblyReference.cache
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Fields.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Fields.pdb

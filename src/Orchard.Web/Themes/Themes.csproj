@@ -121,7 +121,6 @@
     <Content Include="MyTheme\scripts\skel.min.js" />
     <Content Include="MyTheme\scripts\test.js" />
     <Content Include="MyTheme\scripts\touchTouch.jquery.js" />
-    <Content Include="MyTheme\scripts\verify.min.js" />
     <Content Include="MyTheme\scripts\verify.notify.min.js" />
     <Content Include="MyTheme\Theme.png" />
     <Content Include="MyTheme\Theme.txt" />

@@ -24,6 +24,11 @@
   </Match>
 
   <Place Fields_Boolean-IsAjaxForm="-"/>
+
+  <Match DisplayType="SummaryAdmin">      
+      <Place Parts_Content="Content:1"/>      
+    </Match>
+  
   
   <!-- 
   <Place Parts_Blogs_BlogArchives="Content:before"/>

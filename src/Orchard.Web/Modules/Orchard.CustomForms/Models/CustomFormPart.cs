@@ -1,7 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Orchard.ContentManagement;
 using Orchard.ContentManagement.Aspects;
-using Orchard.Core.Title.Models;
 
 namespace Orchard.CustomForms.Models {
     public class CustomFormPart : ContentPart<CustomFormPartRecord> {
@@ -38,6 +37,11 @@ namespace Orchard.CustomForms.Models {
 
         public string Title {
             get { return this.As<ITitleAspect>().Title;  }
+        }
+
+        public bool IsAjaxForm {
+            get { return Record.IsAjaxForm; }
+            set { Record.IsAjaxForm = value; }
         }
     }
 }
