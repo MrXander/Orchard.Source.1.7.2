@@ -1282,3 +1282,20 @@
     {
         margin: 0;
     }
+
+/*********************************************************************************/
+/* Ajax loader
+/*********************************************************************************/
+.container-relative {
+    position: relative;
+}
+
+.absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.hidden {
+    display: none;
+}

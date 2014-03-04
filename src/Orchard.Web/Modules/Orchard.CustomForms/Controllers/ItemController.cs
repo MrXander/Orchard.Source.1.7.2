@@ -181,8 +181,9 @@ namespace Orchard.CustomForms.Controllers
             // save the submitted form
             if (customForm.SaveContentItem)
             {
-                _contentManager.Create(contentItem, VersionOptions.Draft);
+                _contentManager.Create(contentItem);
 
+                contentItem.VersionRecord.Published = false;
                 //в ContentItemVersionRecord.Data заносилась пустота. Этот костыль исправляет
                 contentItem.VersionRecord.Data = contentItem.Record.Data;
 

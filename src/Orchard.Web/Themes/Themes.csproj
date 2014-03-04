@@ -112,14 +112,15 @@
     <Content Include="MyTheme\images\pic05.jpg" />
     <Content Include="MyTheme\images\pic06.jpg" />
     <Content Include="MyTheme\images\pic07.jpg" />
+    <Content Include="MyTheme\scripts\basic.js" />
     <Content Include="MyTheme\scripts\config.js" />
+    <Content Include="MyTheme\scripts\elements\contactUs.js" />
     <Content Include="MyTheme\scripts\first-gallery.js" />
     <Content Include="MyTheme\scripts\html5shiv.js" />
     <Content Include="MyTheme\scripts\jquery.dropotron.min.js" />
     <Content Include="MyTheme\scripts\jquery.min.js" />
     <Content Include="MyTheme\scripts\skel-panels.min.js" />
     <Content Include="MyTheme\scripts\skel.min.js" />
-    <Content Include="MyTheme\scripts\test.js" />
     <Content Include="MyTheme\scripts\touchTouch.jquery.js" />
     <Content Include="MyTheme\scripts\verify.notify.min.js" />
     <Content Include="MyTheme\Theme.png" />
