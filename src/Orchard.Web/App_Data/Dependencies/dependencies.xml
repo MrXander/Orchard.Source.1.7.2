@@ -110,8 +110,8 @@
   </Dependency>
   <Dependency>
     <ModuleName>InsertModuleInContent</ModuleName>
-    <VirtualPath>~/Modules/InsertModuleInContent/bin/InsertModuleInContent.dll</VirtualPath>
-    <LoaderName>PrecompiledExtensionLoader</LoaderName>
+    <VirtualPath>~/Modules/InsertModuleInContent/InsertModuleInContent.csproj</VirtualPath>
+    <LoaderName>DynamicExtensionLoader</LoaderName>
     <References>
       <Reference>
         <Name>Orchard.Scripting</Name>
@@ -153,12 +153,6 @@
         <VirtualPath>~/Modules/Markdown/bin/MarkdownSharp.dll</VirtualPath>
       </Reference>
     </References>
-  </Dependency>
-  <Dependency>
-    <ModuleName>MyTerra</ModuleName>
-    <VirtualPath>~/Themes/MyTerra/MyTerra.csproj</VirtualPath>
-    <LoaderName>DynamicExtensionLoader</LoaderName>
-    <References />
   </Dependency>
   <Dependency>
     <ModuleName>MyTheme</ModuleName>

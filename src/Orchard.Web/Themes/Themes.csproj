@@ -55,43 +55,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyTerra\Filters\LayoutFilter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MyTerra\Content\Images\accordion-plus-white.png" />
-    <Content Include="MyTerra\Content\Images\accordion-plus.png" />
-    <Content Include="MyTerra\Content\Images\arrow-submenu.png" />
-    <Content Include="MyTerra\Content\Images\cart.png" />
-    <Content Include="MyTerra\Content\Images\flags\en-US.gif" />
-    <Content Include="MyTerra\Content\Images\flags\pt-PT.gif" />
-    <Content Include="MyTerra\Content\Images\header-aux.png" />
-    <Content Include="MyTerra\Content\Images\logo.png" />
-    <Content Include="MyTerra\Content\Images\search.gif" />
-    <Content Include="MyTerra\Content\Images\search.png" />
-    <Content Include="MyTerra\js\BindMENU.js" />
-    <Content Include="MyTerra\js\bootstrap-affix.js" />
-    <Content Include="MyTerra\js\bootstrap-alert.js" />
-    <Content Include="MyTerra\js\bootstrap-button.js" />
-    <Content Include="MyTerra\js\bootstrap-carousel.js" />
-    <Content Include="MyTerra\js\bootstrap-collapse.js" />
-    <Content Include="MyTerra\js\bootstrap-dropdown.js" />
-    <Content Include="MyTerra\js\bootstrap-modal.js" />
-    <Content Include="MyTerra\js\bootstrap-popover.js" />
-    <Content Include="MyTerra\js\bootstrap-scrollspy.js" />
-    <Content Include="MyTerra\js\bootstrap-tab.js" />
-    <Content Include="MyTerra\js\bootstrap-tooltip.js" />
-    <Content Include="MyTerra\js\bootstrap-transition.js" />
-    <Content Include="MyTerra\js\bootstrap-typeahead.js" />
-    <Content Include="MyTerra\js\jquery.min.js" />
-    <Content Include="MyTerra\js\jquery.nivo.slider.pack.js" />
-    <Content Include="MyTerra\js\populateSelectNav.js" />
-    <Content Include="MyTerra\js\prefixfree.js" />
-    <Content Include="MyTerra\Styles\fonts\fontawesome-webfont.svg" />
-    <Content Include="MyTerra\Styles\site.css" />
-    <Content Include="MyTerra\Styles\site.uncompressed.css" />
-    <Content Include="MyTerra\Theme.png" />
-    <Content Include="MyTerra\Theme.txt" />
     <Content Include="MyTheme\css\font\fontawesome-webfont.svg" />
     <Content Include="MyTheme\css\images\arrows.png" />
     <Content Include="MyTheme\css\images\bracket.svg" />
@@ -122,6 +88,7 @@
     <Content Include="MyTheme\scripts\skel-panels.min.js" />
     <Content Include="MyTheme\scripts\skel.min.js" />
     <Content Include="MyTheme\scripts\touchTouch.jquery.js" />
+    <Content Include="MyTheme\scripts\verify.notify.js" />
     <Content Include="MyTheme\scripts\verify.notify.min.js" />
     <Content Include="MyTheme\Theme.png" />
     <Content Include="MyTheme\Theme.txt" />
@@ -243,25 +210,6 @@
     <Content Include="TheAdmin\Views\ErrorPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="MyTerra\Content\Web.config" />
-    <Content Include="MyTerra\js\Web.config" />
-    <Content Include="MyTerra\Placement.info" />
-    <Content Include="MyTerra\Styles\fonts\fontawesome-webfont.eot" />
-    <Content Include="MyTerra\Styles\fonts\fontawesome-webfont.ttf" />
-    <Content Include="MyTerra\Styles\fonts\fontawesome-webfont.woff" />
-    <Content Include="MyTerra\Styles\fonts\FontAwesome.otf" />
-    <Content Include="MyTerra\Styles\Web.config" />
-    <Content Include="MyTerra\Views\Layout-HomePage.cshtml" />
-    <Content Include="MyTerra\Views\Layout-Home_Boxed.cshtml" />
-    <Content Include="MyTerra\Views\Layout-InnerWithSidebar.cshtml" />
-    <Content Include="MyTerra\Views\Layout-InnerWithSidebar_Boxed.cshtml" />
-    <Content Include="MyTerra\Views\Layout-Inner_Boxed.cshtml" />
-    <Content Include="MyTerra\Views\Layout.cshtml" />
-    <Content Include="MyTerra\Views\LogOn2.cshtml" />
-    <Content Include="MyTerra\Views\Parts\Product.cshtml" />
-    <Content Include="MyTerra\Views\Web.config" />
-    <Content Include="MyTerra\Views\Widget.Wrapper.cshtml" />
-    <Content Include="MyTerra\Web.config" />
     <Content Include="MyTheme\css\font\fontawesome-webfont.eot" />
     <Content Include="MyTheme\css\font\fontawesome-webfont.ttf" />
     <Content Include="MyTheme\css\font\fontawesome-webfont.woff" />
@@ -283,8 +231,6 @@
     <Content Include="MyTheme\Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MyTerra\Scripts\" />
-    <Folder Include="MyTerra\Zones\" />
     <Folder Include="MyTheme\Content\" />
     <Folder Include="MyTheme\Views\Parts\" />
     <Folder Include="MyTheme\Zones\" />
@@ -360,6 +306,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MyTheme\Views\Widget.Wrapper.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MyTheme\Views\_Copyright.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

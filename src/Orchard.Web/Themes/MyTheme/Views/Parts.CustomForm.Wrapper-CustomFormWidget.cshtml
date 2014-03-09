@@ -24,7 +24,7 @@
 
                 <div class="row half">
                     <div class="6u">
-                        <input name="ContactUsForm.Name.Text" placeholder="Name" type="text" class="text" data-validate="required">
+                        <input name="ContactUsForm.Name.Text" placeholder="Имя" type="text" class="text" data-validate="required">
                     </div>
                     <div class="6u">
                         <input name="ContactUsForm.Email.Text" placeholder="Email" type="text" class="text" data-validate="required,email">
@@ -32,14 +32,14 @@
                 </div>
                 <div class="row half">
                     <div class="12u">
-                        <textarea name="ContactUsForm.Text.Text" placeholder="Message" data-validate="required"></textarea>
+                        <textarea name="ContactUsForm.Text.Text" placeholder="Сообщение" data-validate="required"></textarea>
                     </div>
                 </div>                
                 
                 @Html.Hidden("returnUrl", Request.RawUrl);
                 
                 <div class="row half">
-                    <div class="12u"><a href="#" class="sendFeedback button button-icon fa fa-envelope">Send Message</a></div>
+                    <div class="12u"><a href="#" class="sendFeedback button button-icon fa fa-envelope">Отправить</a></div>
                 </div>
                                               
                 <input type="hidden" name="submit.Save" value="submit.Save"/>
@@ -62,10 +62,8 @@
                     <li class="fa fa-envelope"><a href="#">info@untitled.tld</a></li>
                 </ul>
                 <ul class="icons 6u">
-                    <li class="fa fa-twitter"><a href="http://twitter.com/n33co">untitled-tld</a></li>
-                    <li class="fa fa-dribbble"><a href="http://dribbble.com/n33">dribbble.com/untitled-tld</a></li>
-                    <li class="fa fa-facebook"><a href="#">facebook.com/untitled-tld</a></li>
-                    <li class="fa fa-google-plus"><a href="#">google.com/+untitled-tld</a></li>
+                    <li class="fa fa-vk"><a href="http://vk.com/">vkontakte</a></li>
+                    <li class="fa fa-instagram"><a href="http://dribbble.com/n33">instagram</a></li>
                 </ul>
             </div>
         </section>

@@ -97,6 +97,7 @@ D:\NETWORK\Coding\projects\Repos\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Or
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.CustomForms.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.CustomForms.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Core.dll
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Fields.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Forms.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Framework.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Tokens.dll
@@ -118,6 +119,7 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\System.Net.Http.Formatting.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Framework.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Core.pdb
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Fields.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Forms.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Tokens.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Workflows.pdb
@@ -139,8 +141,6 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Iesi.Collections.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Iesi.Collections.xml
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\System.Net.Http.Formatting.xml
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\obj\Debug\Orchard.CustomForms.csprojResolveAssemblyReference.cache
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\obj\Debug\Orchard.CustomForms.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\obj\Debug\Orchard.CustomForms.pdb
-C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\obj\Debug\Orchard.CustomForms.csprojResolveAssemblyReference.cache
-C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Fields.dll
-C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.CustomForms\bin\Orchard.Fields.pdb

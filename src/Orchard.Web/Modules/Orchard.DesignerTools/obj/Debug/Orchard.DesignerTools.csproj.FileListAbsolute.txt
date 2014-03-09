@@ -139,5 +139,6 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.DesignerTools\b
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.DesignerTools\bin\Iesi.Collections.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.DesignerTools\bin\Iesi.Collections.xml
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.DesignerTools\bin\System.Net.Http.Formatting.xml
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.DesignerTools\obj\Debug\Orchard.DesignerTools.csprojResolveAssemblyReference.cache
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.DesignerTools\obj\Debug\Orchard.DesignerTools.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.DesignerTools\obj\Debug\Orchard.DesignerTools.pdb

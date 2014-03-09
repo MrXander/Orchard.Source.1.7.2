@@ -121,5 +121,6 @@ C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Indexing\bin\NH
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Indexing\bin\Iesi.Collections.pdb
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Indexing\bin\Iesi.Collections.xml
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Indexing\bin\System.Net.Http.Formatting.xml
+C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Indexing\obj\Debug\Orchard.Indexing.csprojResolveAssemblyReference.cache
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Indexing\obj\Debug\Orchard.Indexing.dll
 C:\D\tmp\My\Orchard.Source.1.7.2\src\Orchard.Web\Modules\Orchard.Indexing\obj\Debug\Orchard.Indexing.pdb

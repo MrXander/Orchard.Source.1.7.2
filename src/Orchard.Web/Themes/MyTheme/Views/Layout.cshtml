@@ -15,8 +15,8 @@
     Script.Include("skel.min.js").AtHead();
     Script.Include("skel-panels.min.js").AtHead();
     Script.Include("touchTouch.jquery.js").AtHead();
-    Script.Include("verify.notify.js").AtHead();        
-    Script.Include("basic.js").AtHead();        
+    Script.Include("verify.notify.min.js").AtHead();
+    Script.Include("basic.js").AtHead();
 
     if (Request.Path.EndsWith("/first-gallery"))
     {
@@ -42,7 +42,7 @@
 
     /* Inserting some ad hoc shapes
     ***************************************************************/
-    
+
     WorkContext.Layout.Header.Add(New.Branding(), "5"); // Site name and link to the home page    
     WorkContext.Layout.Footer.Add(New.User(), "10"); // Login and dashboard links
 }
@@ -76,36 +76,43 @@
     </div>
 }
 
-<div id="main-wrapper">
-    <div id="main" class="container">
-        <div class="row">
-            <div id="content" class="8u">
+
+@if (Model.BeforeContent != null)
+{
+    <div id="before-content">
+        @Zone(Model.BeforeContent)
+    </div>
+}
+
+@if (!string.Equals(Request.Path, "/"))
+{
+    <div id="main-wrapper">
+        <div id="main" class="container">
+            <div class="row">
                 @if (Model.Messages != null)
                 {
                     <div id="messages">
                         @Zone(Model.Messages)
                     </div>
                 }
-                @if (Model.BeforeContent != null)
-                {
-                    <div id="before-content">
-                        @Zone(Model.BeforeContent)
-                    </div>
-                }
+
                 @if (Model.Content != null)
-                {                
-                    @Zone(Model.Content)                
-                }
-                @if (Model.AfterContent != null)
                 {
-                    <div id="after-content">
-                        @Zone(Model.AfterContent)
+                    <div id="content" class="8u">
+                        @Zone(Model.Content)
                     </div>
                 }
             </div>
         </div>
     </div>
-</div>
+}
+@if (Model.AfterContent != null)
+{
+    <div id="after-content">
+        @Zone(Model.AfterContent)
+    </div>
+}
+
 
 @if (Model.AfterMain != null)
 {
@@ -121,12 +128,6 @@
             @Zone(Model.Footer)
         </div>
     
-        <div id="copyright" class="container">
-            <ul class="links">
-                <li>© Untitled. All rights reserved</li>
-                <li>Demo images: <a href="http://regularjane.deviantart.com/">regularjane</a></li>
-                <li>Design: <a href="http://html5up.net/">HTML5 UP</a></li>
-            </ul>
-        </div>
+        @Html.Partial("_Copyright")
     }
 </div>

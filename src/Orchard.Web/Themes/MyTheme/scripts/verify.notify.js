@@ -1,4 +1,4 @@
-/** Verify.js - v0.0.1 - 2013/06/12
+﻿/** Verify.js - v0.0.1 - 2013/06/12
  * https://github.com/jpillora/verify
  * Copyright (c) 2013 Jaime Pillora - MIT
  */
@@ -2365,7 +2365,7 @@ log("plugin added.");
         return true;
       },
       messages: {
-        "all": "This field is required",
+        "all": "Не заполнено",
         "multiple": "Please select an option",
         "single": "This checkbox is required"
       }
